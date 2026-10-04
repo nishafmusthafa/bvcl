@@ -3,7 +3,7 @@
 import { createContext, useContext, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { Check, PackageCheck, PhoneCall, Sparkles } from "lucide-react";
 import { LogoMark } from "@/components/BrandLogo";
-import { serviceColor } from "@/components/Logos";
+import { ServiceLogo, serviceColor, serviceLogo } from "@/components/Logos";
 import { reducedMotion } from "@/lib/gsap";
 import { useReady } from "@/components/useReady";
 
@@ -12,10 +12,15 @@ import { useReady } from "@/components/useReady";
 const glass =
   "rounded-2xl border border-white/10 bg-[oklch(21%_0.008_60/0.78)] shadow-[0_24px_60px_-24px_oklch(0%_0_0/0.85)] backdrop-blur-xl";
 
-function Tag({ color, children }: { color: string; children: React.ReactNode }) {
+// Product label: the product's logo mark when it has one, otherwise a dot in its colour.
+function Tag({ slug, children }: { slug: string; children: React.ReactNode }) {
   return (
     <span className="inline-flex items-center gap-1.5 text-[11px] font-medium tracking-[0.06em] text-text-3 uppercase">
-      <span className="size-1.5 rounded-full" style={{ background: color }} />
+      {serviceLogo[slug] ? (
+        <ServiceLogo slug={slug} className="size-3.5 shrink-0" />
+      ) : (
+        <span className="size-1.5 shrink-0 rounded-full" style={{ background: serviceColor[slug] }} />
+      )}
       {children}
     </span>
   );
@@ -157,7 +162,7 @@ function VoiceCard() {
   return (
     <div className={`${glass} p-4`}>
       <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
-        <Tag color={serviceColor["ai-receptionist"]}>Dialgen.AI · AI Receptionist</Tag>
+        <Tag slug="ai-receptionist">Dialgen.AI · AI Receptionist</Tag>
         <span className="flex items-center gap-1.5 text-[11px] text-[#f87171]">
           <span className="live size-1.5 rounded-full bg-[#f87171]" /> Live · 0:42
         </span>
@@ -189,7 +194,7 @@ function StockCard() {
         <PackageCheck size={16} />
       </span>
       <div className="min-w-0">
-        <Tag color={serviceColor["faircode-erpnext"]}>Faircode ERPNext</Tag>
+        <Tag slug="faircode-erpnext">Faircode ERPNext</Tag>
         <p className="mt-1 text-[13px] leading-snug text-text">System built to any scale</p>
         <p className="text-[11px] leading-snug text-text-3">SKU A-104 low · reorder sent</p>
       </div>
@@ -200,7 +205,7 @@ function StockCard() {
 function PayrollCard() {
   return (
     <div className={`${glass} p-4`}>
-      <Tag color={serviceColor.visorflow}>VisorFlow</Tag>
+      <Tag slug="visorflow">VisorFlow</Tag>
       <p className="mt-1 text-[13px] leading-snug text-text">HR &amp; Compliance, UKVI</p>
       <div className="mt-2 flex items-baseline justify-between gap-2">
         <p className="text-2xl font-bold tracking-[-0.02em] text-text">£48,210</p>
@@ -225,7 +230,7 @@ function MarketingCard() {
   return (
     <div className={`${glass} p-4`}>
       <div className="flex items-center justify-between gap-2">
-        <Tag color={c}>Marketing · Ads</Tag>
+        <Tag slug="marketing">Marketing · Ads</Tag>
         <span className="rounded-full bg-[#4ade80]/15 px-2 py-0.5 text-[11px] font-medium text-[#4ade80]">+18%</span>
       </div>
       <p className="mt-2 text-[12px] text-text-3">Enquiries from ads this week</p>
@@ -256,7 +261,7 @@ function SiteCard() {
         </span>
       </div>
       <div className="p-3.5">
-        <Tag color={c}>Smartsite · Website</Tag>
+        <Tag slug="smartsite">Smartsite · Website</Tag>
         <p className="mt-2 text-[15px] leading-tight font-semibold tracking-[-0.01em] text-text">
           Make your business smarter in one day
         </p>
@@ -280,7 +285,7 @@ function SocialCard() {
   return (
     <div className={`${glass} p-3.5`}>
       <div className="flex">
-        <Tag color={c}>MyAIM · AI Social Media Manager</Tag>
+        <Tag slug="myaim">MyAIM · AI Social Media Manager</Tag>
       </div>
       <ol className="mt-2.5 grid grid-cols-4 gap-1.5">
         {socialSteps.map((s, i) => {

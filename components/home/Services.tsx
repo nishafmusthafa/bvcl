@@ -1,7 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import type { HomeContent } from "@/lib/cms/home";
 import EnquiryButton from "@/components/enquiry/EnquiryButton";
-import { ServiceMark, serviceColor } from "@/components/Logos";
+import { ServiceLogo, serviceColor } from "@/components/Logos";
 
 // Menu board: every service is a row with its own brand panel.
 export default function Services({ c }: { c: HomeContent["services"] }) {
@@ -38,7 +38,7 @@ export default function Services({ c }: { c: HomeContent["services"] }) {
                     className="relative grid size-14 place-items-center rounded-2xl border border-white/15 bg-white/[0.06] backdrop-blur-md transition-transform duration-300 group-hover:scale-110"
                     style={{ color: (serviceColor[s.slug] ?? "#9ca3af"), boxShadow: `0 0 40px -6px ${(serviceColor[s.slug] ?? "#9ca3af")}80` }}
                   >
-                    <ServiceMark slug={s.slug} className="size-7" />
+                    <ServiceLogo slug={s.slug} className="size-8" />
                   </span>
                   <span className="absolute top-3 left-3 font-mono text-[11px] text-text-3">
                     {String(i + 1).padStart(2, "0")}
@@ -50,7 +50,7 @@ export default function Services({ c }: { c: HomeContent["services"] }) {
                     className="grid size-12 shrink-0 place-items-center rounded-xl border border-white/10 md:hidden"
                     style={{ color: (serviceColor[s.slug] ?? "#9ca3af"), background: `${(serviceColor[s.slug] ?? "#9ca3af")}1f` }}
                   >
-                    <ServiceMark slug={s.slug} className="size-6" />
+                    <ServiceLogo slug={s.slug} className="size-7" />
                   </span>
                   <div>
                     <span className="text-sm text-text-3">

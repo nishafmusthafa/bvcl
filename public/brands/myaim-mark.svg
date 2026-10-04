@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" role="img" aria-label="MyAIM">
+  <rect width="48" height="48" rx="12" fill="#E879F9"/>
+  <circle cx="23" cy="25" r="11" stroke="#0D0C0B" stroke-width="4"/>
+  <path d="M13.5 30.5L10 38.5L18.5 35Z" fill="#0D0C0B"/>
+  <path d="M23 15v4.5M23 30.5V35M13 25h4.5M28.5 25H33" stroke="#0D0C0B" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="23" cy="25" r="3" fill="#0D0C0B"/>
+  <path d="M38 5.5Q38.5 9.5 42.5 10Q38.5 10.5 38 14.5Q37.5 10.5 33.5 10Q37.5 9.5 38 5.5Z" fill="#0D0C0B"/>
+</svg>

@@ -3,6 +3,16 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.3.0] - 2026-10-05
+
+### Added
+- Product logos in `public/brands/`: the official PROXe, Dialgen.AI and Faircode marks (from goproxe.com, dialgen.ai and faircodeme.com), and new Smartsite and MyAIM logos (mark, plus full logo in light and dark versions).
+- `ServiceLogo` shows a product's logo mark, falling back to the placeholder mark for products without one (VisorFlow, Marketing).
+
+### Changed
+- Services list: each product tile shows its logo mark (desktop panel and mobile tile).
+- Hero cards: the colour dot in each product label becomes the product's logo mark where there is one.
+
 ## [0.2.5] - 2026-10-04
 
 ### Changed
@@ -99,6 +109,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.3.0]: https://github.com/nishafmusthafa/bvcl/compare/v0.2.5...v0.3.0
 [0.2.5]: https://github.com/nishafmusthafa/bvcl/compare/v0.2.4...v0.2.5
 [0.2.4]: https://github.com/nishafmusthafa/bvcl/compare/v0.2.3...v0.2.4
 [0.2.3]: https://github.com/nishafmusthafa/bvcl/compare/v0.2.2...v0.2.3

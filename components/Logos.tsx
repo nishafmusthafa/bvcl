@@ -1,6 +1,36 @@
-// Placeholder service marks. Swap for the real service logos when supplied.
+import Image from "next/image";
+
+// Placeholder service marks, used where a product has no logo in serviceLogo yet.
 
 type MarkProps = { slug: string; className?: string };
+
+// Product logo marks in /public/brands. PROXe, Dialgen.AI and Faircode are the official
+// marks from their sites; Smartsite and MyAIM are ours. Full logos sit beside them.
+export const serviceLogo: Record<string, { src: string; width: number; height: number }> = {
+  smartsite: { src: "/brands/smartsite-mark.svg", width: 48, height: 48 },
+  proxe: { src: "/brands/proxe-icon-white.webp", width: 788, height: 565 },
+  "ai-receptionist": { src: "/brands/dialgen-icon.svg", width: 36, height: 35 },
+  "faircode-erpnext": { src: "/brands/faircode-mark.png", width: 104, height: 104 },
+  myaim: { src: "/brands/myaim-mark.svg", width: 48, height: 48 },
+};
+
+// The product's logo mark if it has one, otherwise its placeholder mark. Decorative:
+// the product name is always written next to it.
+export function ServiceLogo({ slug, className = "size-6" }: MarkProps) {
+  const logo = serviceLogo[slug];
+  if (!logo) return <ServiceMark slug={slug} className={className} />;
+  return (
+    <Image
+      src={logo.src}
+      width={logo.width}
+      height={logo.height}
+      alt=""
+      aria-hidden
+      unoptimized
+      className={`object-contain ${className}`}
+    />
+  );
+}
 
 export const serviceColor: Record<string, string> = {
   smartsite: "#facc15",
