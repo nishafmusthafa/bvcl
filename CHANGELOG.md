@@ -3,6 +3,11 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.2.1] - 2026-10-04
+
+### Changed
+- Hero Smartsite card: the placeholder lines are replaced by the description "Make your business smarter in one day". The phone is 10px shorter so the taller card clears its message bar.
+
 ## [0.2.0] - 2026-10-04
 
 ### Added
@@ -71,6 +76,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.2.1]: https://github.com/nishafmusthafa/bvcl/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/nishafmusthafa/bvcl/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/nishafmusthafa/bvcl/compare/v0.0.7...v0.1.0
 [0.0.7]: https://github.com/nishafmusthafa/bvcl/compare/v0.0.6...v0.0.7

@@ -256,10 +256,9 @@ function SiteCard() {
       </div>
       <div className="p-3.5">
         <Tag color={c}>Smartsite · Website</Tag>
-        <div className="mt-2.5 space-y-1.5">
-          <span className="block h-2 w-4/5 rounded-full bg-white/15" />
-          <span className="block h-2 w-3/5 rounded-full bg-white/[0.08]" />
-        </div>
+        <p className="mt-2 text-[15px] leading-tight font-semibold tracking-[-0.01em] text-text">
+          Make your business smarter in one day
+        </p>
         <div className="mt-3 flex items-center justify-between gap-2">
           <span className="rounded-full px-2.5 py-1 text-[11px] font-semibold text-ink" style={{ background: c }}>
             Book now
@@ -382,7 +381,7 @@ function DesktopCollage() {
   return (
     <div className="relative h-full w-full">
       <Backdrop />
-      <Float className="top-[16%] left-0 z-20 h-[380px] w-[236px]" delay={0.4} depth={10} i={0}>
+      <Float className="top-[16%] left-0 z-20 h-[370px] w-[236px]" delay={0.4} depth={10} i={0}>
         <Phone />
       </Float>
       <Float className="top-0 right-0 z-30 w-[300px]" depth={22} i={1}>
