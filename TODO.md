@@ -16,7 +16,7 @@ Status: todo / doing / done / blocked. Newest items at the bottom.
 | T10 | Run `grant execute on function public.is_cms_admin() to anon;` in Supabase | blocked | User: Supabase SQL editor. Local dev still logs 401s until done |
 | T11 | Make live site public | blocked | User: Vercel > Settings > Deployment Protection > turn off Vercel Authentication, or add a custom domain |
 | T12 | `nextlevelbuilder/ui-ux-pro-max-skill`: install as skill or download | blocked | User decision |
-| T13 | Adopt build process: CLAUDE.md, TODO.md, CHANGELOG.md, .env.example, tags, HANDOFF.md | doing | |
+| T13 | Adopt build process: CLAUDE.md, TODO.md, CHANGELOG.md, .env.example, tags, HANDOFF.md | done | Files committed in `972bd8f` and the handoff commit; tags v0.0.2 to v0.0.7 pushed (`git push --tags` exit 0); `.env.local` confirmed still ignored |
 | T14 | Fix lint errors (`react-hooks/set-state-in-effect` in `useReady.ts`, `HeroVisual.tsx`) | done | v0.0.7. tsc, lint (0 errors) and `next build` pass. Hero checked at 1440px (scale 0.94) and 375px (scale 0.55, no x-overflow); `cards-go` set, so `useReady` fires; no new console errors |
 | T15 | Lint warnings: `aria-invalid` on radio inputs (`EnquiryDialog.tsx:226`, `:267`) | todo | |
 | T16 | `npm audit`: 5 high severity vulnerabilities | todo | |
