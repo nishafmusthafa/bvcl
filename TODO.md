@@ -21,3 +21,6 @@ Status: todo / doing / done / blocked. Newest items at the bottom.
 | T15 | Lint warnings: `aria-invalid` on radio inputs (`EnquiryDialog.tsx:226`, `:267`) | todo | |
 | T16 | `npm audit`: 5 high severity vulnerabilities | todo | |
 | T17 | Enquiry form end to end, 3 runs | todo | Writes rows to the live Supabase `enquiries` table; needs T10 first |
+| T18 | Version from `package.json` so SemVer MINOR/MAJOR bumps work | done | `3db6b22`. tsc, lint, build pass; footer and admin login show v0.0.7; `package.json` not in client bundle |
+| T19 | Landing hero: show all 6 products (Smartsite, PROXe, Dialgen.AI, VisorFlow, Faircode ERPNext, Marketing) in the collage style | done | v0.1.0. tsc, lint (0 errors), build pass. 1440px: 7 cards measured, no clipped tags, overlaps only at edges. 375px: scaled 0.55, all cards visible, no x-overflow, drag off. Drag tested on Smartsite, VisorFlow, Marketing; clamps to stage; double-click resets |
+| T20 | Hero collage is read by screen readers (mockup text, fake "Book now"); consider `aria-hidden` plus a short text alternative | todo | Existed before T19 |

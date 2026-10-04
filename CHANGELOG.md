@@ -3,6 +3,16 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.1.0] - 2026-10-04
+
+### Added
+- Hero collage shows all six products: a new Smartsite card (website with enquiry capture) and a Marketing card (enquiries from ads).
+
+### Changed
+- Every hero card names its product (PROXe, Dialgen.AI, Faircode ERPNext, VisorFlow, Smartsite, Marketing) and uses that product's colour from `serviceColor`.
+- The generic Data card is replaced by the Marketing card; the Instagram lead notification moves above the phone.
+- The version now comes from `package.json` (SemVer) instead of `CHANGE_COUNTER`.
+
 ## [0.0.7] - 2026-10-04
 
 ### Fixed
@@ -51,6 +61,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.1.0]: https://github.com/nishafmusthafa/bvcl/compare/v0.0.7...v0.1.0
 [0.0.7]: https://github.com/nishafmusthafa/bvcl/compare/v0.0.6...v0.0.7
 [0.0.6]: https://github.com/nishafmusthafa/bvcl/compare/v0.0.5...v0.0.6
 [0.0.5]: https://github.com/nishafmusthafa/bvcl/compare/v0.0.4...v0.0.5

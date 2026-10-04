@@ -7,7 +7,7 @@ Run the Baker Vaughn site (fork of `bconclub/bakervaughn`) from `nishafmusthafa/
 
 ## Live state
 - Local: `C:\Builds\BVCL`, git on `main`. Remotes: `origin` = nishafmusthafa/bvcl, `upstream` = bconclub/bakervaughn.
-- Version: 0.0.7 (tag `v0.0.7`). Releases v0.0.2 to v0.0.7 are tagged.
+- Version: 0.1.0 (tag `v0.1.0`). Releases v0.0.2 onward are tagged.
 - Vercel: project `bvcl`, framework Next.js, production deploys on push to `main`. Domain `bvcl-bvcl.vercel.app`, currently behind Vercel Authentication (visitors see a Vercel login).
 - Supabase: keys in `.env.local` (git-ignored) and in Vercel env vars. Public CMS reads fail until the v0.0.6 grant is run.
 - Dev server: `npm run dev` on :3000. `C:\Builds\.claude\launch.json` has the `bvcl-dev` config for the Claude browser pane.
@@ -19,6 +19,7 @@ See `TODO.md` (T1 to T14) and `CHANGELOG.md`.
 - T15: `aria-invalid` on radio inputs, `components/enquiry/EnquiryDialog.tsx:226` and `:267` (lint warnings).
 - T16: `npm audit` reports 5 high severity vulnerabilities.
 - T17: enquiry form end to end, 3 runs. Writes to the live `enquiries` table; do after T10.
+- T20: hide the decorative hero collage from screen readers.
 
 ## Blockers (user acts)
 - T3: revoke the GitHub token pasted in chat.
@@ -28,14 +29,16 @@ See `TODO.md` (T1 to T14) and `CHANGELOG.md`.
 
 ## Key files and links
 - `CLAUDE.md` (project facts and process), `TODO.md`, `CHANGELOG.md`, `ADMIN.md`, `DESIGN.md`
-- `lib/version.ts` (`CHANGE_COUNTER`), `package.json`
+- `package.json` (version source; `next.config.ts` passes it to `lib/version.ts`)
+- `components/home/HeroVisual.tsx` (hero collage, one card per product), `components/Logos.tsx` (`serviceColor`)
 - `supabase/migrations/` (run new ones in Supabase by hand)
 - https://github.com/nishafmusthafa/bvcl, https://vercel.com/bvcl/bvcl
 
 ## Decisions
 - Kept upstream history instead of a fresh repo, so `git pull upstream main` still works.
 - Commit author is `nishafmusthafa` with the GitHub noreply email (repo-local config).
-- Versions bump PATCH for fixes. `package.json`, `package-lock.json` and `CHANGE_COUNTER` move together. Docs-only commits do not bump.
+- SemVer from `package.json` (replaced `CHANGE_COUNTER`, which could not do MINOR/MAJOR bumps). Keep `package-lock.json` in step. Docs-only and refactor commits do not bump.
+- Turbopack dev can serve stale Tailwind CSS after new arbitrary classes. If a new class has no effect, stop the dev server and delete `.next/dev`.
 - `HeroVisual` keeps its synchronous first measurement. The ResizeObserver's first callback needs a paint, and without that measurement the stage stays hidden.
 
 ## Next action
