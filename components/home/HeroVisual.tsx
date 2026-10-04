@@ -278,9 +278,8 @@ function SocialCard() {
   const c = serviceColor.myaim;
   return (
     <div className={`${glass} p-3.5`}>
-      <div className="flex items-center justify-between gap-2">
-        <Tag color={c}>MyAIM · Social</Tag>
-        <span className="text-[11px] text-text-3">2.4k reach</span>
+      <div className="flex">
+        <Tag color={c}>MyAIM · AI Social Media Manager</Tag>
       </div>
       <ol className="mt-2.5 grid grid-cols-4 gap-1.5">
         {socialSteps.map((s, i) => {

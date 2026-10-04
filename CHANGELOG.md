@@ -3,6 +3,11 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.2.2] - 2026-10-04
+
+### Changed
+- Hero MyAIM card label reads "MyAIM · AI Social Media Manager" (was "MyAIM · Social"). The "2.4k reach" figure is removed to keep the label on one line.
+
 ## [0.2.1] - 2026-10-04
 
 ### Changed
@@ -76,6 +81,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.2.2]: https://github.com/nishafmusthafa/bvcl/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/nishafmusthafa/bvcl/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/nishafmusthafa/bvcl/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/nishafmusthafa/bvcl/compare/v0.0.7...v0.1.0
