@@ -42,9 +42,10 @@ Supabase login an admin, with the part of its email before the @ as the username
 
 ## Versioning
 
-`lib/version.ts` counts shipped batches (`CHANGE_COUNTER`); the version shows in the site footer, on the
-admin login page and in the admin header. Bump it once per shipped batch, keep `package.json` in step,
-and tag the release (`git tag vX.Y.Z`).
+The version lives in `package.json` (semantic versioning: breaking change bumps MAJOR, new feature
+MINOR, fix PATCH); `next.config.ts` passes it to `lib/version.ts`. It shows in the site footer, on the
+admin login page and in the admin header. Bump it once per release, add a `CHANGELOG.md` entry, and
+tag the release (`git tag vX.Y.Z`).
 
 ## How it fits together
 
