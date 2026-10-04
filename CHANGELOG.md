@@ -1,0 +1,54 @@
+# Changelog
+
+All notable changes to this project are documented here.
+Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
+
+## [0.0.6] - 2026-10-04
+
+### Fixed
+- Public CMS reads (work, people, testimonials, brands) failed for anonymous visitors with "permission denied for function is_cms_admin". New migration `supabase/migrations/20261006120000_cms_admin_anon_execute.sql` grants `anon` execute on `public.is_cms_admin()`. It returns false without a signed-in email, so nothing is exposed. Must be run in Supabase to take effect.
+
+### Added
+- `SKILL.md` (caveman skill) at the repo root.
+
+## [0.0.5] - 2026-10-04
+
+### Added
+- Smartsite service in the services menu, with its own mark and colour, and as an option in the enquiry form.
+
+## [0.0.4] - 2026-10-04
+
+### Changed
+- Admin app shell: sidebar with icons, active state, new-enquiry badge, user chip with sign-out, slide-out menu on mobile.
+- Admin dashboard: greeting, quick-add buttons, KPI cards, 30-day enquiries chart, pipeline, latest enquiries, recently edited items and a content-health check.
+
+## [0.0.3] - 2026-10-04
+
+### Added
+- Admin collections: Brands, Testimonials, Work and Team, each with draft/published/archived status, featured flag, ordering and delete.
+- Image uploads to a public Supabase Storage bucket with admin-only writes.
+- Enquiries inbox: the consultation form stores every request; admins set status and notes.
+- Home page reads published collection items and falls back to the content in code.
+
+### Changed
+- Collections replace the section text editor in `/admin`.
+
+## [0.0.2] - 2026-10-04
+
+### Added
+- Every Supabase login is an admin, with a username and display name.
+- Admin sign-in with a username or email, and a show/hide password toggle.
+- Version shown on the admin login page and in the admin header.
+
+## [0.0.1] - 2026-10-03
+
+### Added
+- Baker Vaughn website redesign.
+- Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
+
+[0.0.6]: https://github.com/nishafmusthafa/bvcl/compare/v0.0.5...v0.0.6
+[0.0.5]: https://github.com/nishafmusthafa/bvcl/compare/v0.0.4...v0.0.5
+[0.0.4]: https://github.com/nishafmusthafa/bvcl/compare/v0.0.3...v0.0.4
+[0.0.3]: https://github.com/nishafmusthafa/bvcl/compare/v0.0.2...v0.0.3
+[0.0.2]: https://github.com/nishafmusthafa/bvcl/releases/tag/v0.0.2
+[0.0.1]: https://github.com/nishafmusthafa/bvcl/commit/e66e65f
