@@ -7,6 +7,7 @@ export const SERVICE_OPTIONS = [
   "Answering calls and taking bookings",
   "HR, payroll and compliance",
   "Stock, sales and accounts",
+  "Social media for my store",
   "Marketing and brand",
   "Help me choose",
 ] as const;
@@ -17,6 +18,7 @@ export const SERVICE_HINTS: Partial<Record<(typeof SERVICE_OPTIONS)[number], str
   "Answering calls and taking bookings": "Dialgen.AI, AI receptionist",
   "HR, payroll and compliance": "Rotas, right-to-work, payroll",
   "Stock, sales and accounts": "ERP",
+  "Social media for my store": "MyAIM, AI social media manager",
   "Marketing and brand": "Ads, local SEO, branding",
   "Help me choose": "We'll suggest a starting point",
 };

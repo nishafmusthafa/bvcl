@@ -147,6 +147,15 @@ export const services = [
     alt: "Warehouse shelving stacked with boxed stock",
   },
   {
+    slug: "myaim",
+    name: "MyAIM",
+    kind: "AI Social Media Manager",
+    line: "Your AI social media manager, specialised for convenience stores. It plans your posts, creates them, markets your offers and turns followers into sales.",
+    handles: "Think · Create · Market · Sales",
+    image: "/unsplash/erpnext-BNBA1h-N.webp",
+    alt: "Shop shelving stacked with boxed stock",
+  },
+  {
     slug: "marketing",
     name: "Marketing & branding",
     kind: "Growth",
@@ -158,7 +167,7 @@ export const services = [
 ];
 
 export const flowSteps = [
-  { title: "Attract", service: "Marketing & branding", caption: "Brand, ads and local SEO bring enquiries in." },
+  { title: "Attract", service: "Marketing & branding + MyAIM", caption: "Brand, ads, local SEO and daily social posts bring enquiries in." },
   { title: "Answer", service: "PROXe + Dialgen.AI (AI Receptionist)", caption: "Every message, form and call answered, qualified and booked." },
   { title: "Run", service: "Faircode ERPNext", caption: "Orders, stock and accounts land in one place. Nothing re-typed." },
   { title: "Staff", service: "VisorFlow", caption: "Rotas, right-to-work and payroll, posting straight to the accounts." },

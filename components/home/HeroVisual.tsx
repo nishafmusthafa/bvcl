@@ -7,7 +7,7 @@ import { serviceColor } from "@/components/Logos";
 import { reducedMotion } from "@/lib/gsap";
 import { useReady } from "@/components/useReady";
 
-// Product collage: all six products shown working together, each in its service colour.
+// Product collage: every product shown working together, each in its service colour.
 // Mockup data is illustrative.
 const glass =
   "rounded-2xl border border-white/10 bg-[oklch(21%_0.008_60/0.78)] shadow-[0_24px_60px_-24px_oklch(0%_0_0/0.85)] backdrop-blur-xl";
@@ -273,6 +273,38 @@ function SiteCard() {
   );
 }
 
+const socialSteps = ["Think", "Create", "Market", "Sales"];
+
+function SocialCard() {
+  const c = serviceColor.myaim;
+  return (
+    <div className={`${glass} p-3.5`}>
+      <div className="flex items-center justify-between gap-2">
+        <Tag color={c}>MyAIM · Social</Tag>
+        <span className="text-[11px] text-text-3">2.4k reach</span>
+      </div>
+      <ol className="mt-2.5 grid grid-cols-4 gap-1.5">
+        {socialSteps.map((s, i) => {
+          const last = i === socialSteps.length - 1;
+          return (
+            <li
+              key={s}
+              className={`rounded-md py-1 text-center text-[10px] font-medium ${last ? "text-ink" : ""}`}
+              style={last ? { background: c } : { background: `${c}26`, color: c }}
+            >
+              {s}
+            </li>
+          );
+        })}
+      </ol>
+      <p className="mt-2.5 flex items-center gap-1.5 text-[12px] text-text">
+        <Sparkles size={12} className="shrink-0" style={{ color: c }} />
+        Meal deal post live <span className="text-text-3">· 18 orders</span>
+      </p>
+    </div>
+  );
+}
+
 function Backdrop() {
   return (
     <>
@@ -350,7 +382,7 @@ function DesktopCollage() {
   return (
     <div className="relative h-full w-full">
       <Backdrop />
-      <Float className="top-[8%] left-0 z-20 h-[440px] w-[236px]" delay={0.4} depth={10} i={0}>
+      <Float className="top-[16%] left-0 z-20 h-[380px] w-[236px]" delay={0.4} depth={10} i={0}>
         <Phone />
       </Float>
       <Float className="top-0 right-0 z-30 w-[300px]" depth={22} i={1}>
@@ -368,15 +400,8 @@ function DesktopCollage() {
       <Float className="bottom-0 left-0 z-30 w-[250px]" delay={1} depth={20} i={5}>
         <SiteCard />
       </Float>
-      <Float className="top-0 left-[2%] z-30" delay={2} depth={34} i={6}>
-        <div className={`${glass} flex items-center gap-2 rounded-full py-2 pr-4 pl-2`}>
-          <span className="grid size-7 place-items-center rounded-full bg-lamp/15 text-lamp">
-            <Sparkles size={14} />
-          </span>
-          <span className="text-[12px] text-text">
-            New lead from Instagram <span className="text-text-3">· qualified</span>
-          </span>
-        </div>
+      <Float className="top-0 left-0 z-30 w-[300px]" delay={2} depth={34} i={6}>
+        <SocialCard />
       </Float>
     </div>
   );

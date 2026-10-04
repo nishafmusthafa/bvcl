@@ -3,6 +3,16 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.2.0] - 2026-10-04
+
+### Added
+- New product: MyAIM, an AI Social Media Manager specialised for convenience stores (Think · Create · Market · Sales). It appears in the services list (with its own mark and colour), the footer, the enquiry form ("Social media for my store") and the hero collage.
+
+### Changed
+- Services heading now reads "Seven services. One brain behind them."
+- The Attract step in "How it connects" includes MyAIM and daily social posts.
+- Hero: the MyAIM card replaces the Instagram lead pill; the phone moves down and is 60px shorter to make room.
+
 ## [0.1.0] - 2026-10-04
 
 ### Added
@@ -61,6 +71,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.2.0]: https://github.com/nishafmusthafa/bvcl/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/nishafmusthafa/bvcl/compare/v0.0.7...v0.1.0
 [0.0.7]: https://github.com/nishafmusthafa/bvcl/compare/v0.0.6...v0.0.7
 [0.0.6]: https://github.com/nishafmusthafa/bvcl/compare/v0.0.5...v0.0.6

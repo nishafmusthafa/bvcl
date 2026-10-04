@@ -8,6 +8,7 @@ export const serviceColor: Record<string, string> = {
   "ai-receptionist": "#2dd4bf",
   visorflow: "#60a5fa",
   "faircode-erpnext": "#4ade80",
+  myaim: "#e879f9",
   marketing: "#fb7185",
 };
 
@@ -61,6 +62,13 @@ export function ServiceMark({ slug, className = "size-6" }: MarkProps) {
         <>
           <path {...p} d="M4 20h16" />
           <path {...p} d="M7 16v-4M12 16V7M17 16v-6" />
+        </>
+      )}
+      {slug === "myaim" && (
+        <>
+          <rect {...p} x="3" y="5" width="14" height="14" rx="3" />
+          <path {...p} d="M10 15.5s-3-1.7-3-3.6a1.5 1.5 0 0 1 3-.7 1.5 1.5 0 0 1 3 .7c0 1.9-3 3.6-3 3.6z" />
+          <path {...p} d="M19.5 2.5v4M17.5 4.5h4" />
         </>
       )}
       {slug === "marketing" && (
