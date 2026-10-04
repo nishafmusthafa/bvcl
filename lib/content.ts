@@ -300,6 +300,11 @@ export const beliefs = [
   { title: "Always learning", body: "Our Labs and side builds keep us close to what's new in AI and hardware." },
 ];
 
+export const contact = {
+  email: "connect@bvcl.com",
+  phone: "07770 077784",
+};
+
 export const offices = [
   { city: "Wales", type: "Head office", tz: "Europe/London" },
   { city: "Sheffield", type: "Office", tz: "Europe/London" },

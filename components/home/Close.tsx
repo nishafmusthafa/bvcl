@@ -4,6 +4,9 @@ import { Wordmark } from "./Nav";
 import type { HomeContent } from "@/lib/cms/home";
 import { version } from "@/lib/version";
 
+// UK number as written ("07770 077784") to an international tel: link.
+const telHref = (phone: string) => `tel:+44${phone.replace(/\D/g, "").replace(/^0/, "")}`;
+
 export function Close({ c }: { c: HomeContent["close"] }) {
   return (
     <section id="contact" className="bg-lamp py-20 text-ink md:py-28" aria-labelledby="close-title">
@@ -18,6 +21,14 @@ export function Close({ c }: { c: HomeContent["close"] }) {
           <EnquiryButton source="close" variant="ink" className="mt-8">
             {c.ctaLabel}
           </EnquiryButton>
+          <p className="mt-6 flex flex-wrap gap-x-6 text-lg font-semibold">
+            <a href={`mailto:${c.email}`} className="inline-flex min-h-11 items-center underline-offset-4 hover:underline">
+              {c.email}
+            </a>
+            <a href={telHref(c.phone)} className="inline-flex min-h-11 items-center underline-offset-4 hover:underline">
+              {c.phone}
+            </a>
+          </p>
         </div>
       </div>
     </section>
@@ -43,8 +54,12 @@ export function Footer({ c, services }: { c: HomeContent["footer"]; services: Ho
               {c.tagline}
             </p>
             <ul className="mt-6 space-y-1 font-mono text-sm text-text-3">
-              <li>{c.email}</li>
-              <li>{c.phone}</li>
+              <li>
+                <a href={`mailto:${c.email}`} className="hover:text-text">{c.email}</a>
+              </li>
+              <li>
+                <a href={telHref(c.phone)} className="hover:text-text">{c.phone}</a>
+              </li>
             </ul>
           </div>
           <div className="grid grid-cols-2 gap-8">

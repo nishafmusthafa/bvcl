@@ -3,6 +3,11 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.4.1] - 2026-10-05
+
+### Added
+- Contact details: email connect@bvcl.com and phone 07770 077784, as tap-to-email and tap-to-call links in the closing contact section and the footer (replacing the footer's `[EMAIL ADDRESS]` and `[PHONE NUMBER]` placeholders). Both read from `contact` in `lib/content.ts`.
+
 ## [0.4.0] - 2026-10-05
 
 ### Changed
@@ -133,6 +138,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.4.1]: https://github.com/nishafmusthafa/bvcl/compare/v0.4.0...v0.4.1
 [0.4.0]: https://github.com/nishafmusthafa/bvcl/compare/v0.3.3...v0.4.0
 [0.3.3]: https://github.com/nishafmusthafa/bvcl/compare/v0.3.2...v0.3.3
 [0.3.2]: https://github.com/nishafmusthafa/bvcl/compare/v0.3.1...v0.3.2
