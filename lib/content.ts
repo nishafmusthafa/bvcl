@@ -102,6 +102,15 @@ export const problems = [
 
 export const services = [
   {
+    slug: "proxe",
+    name: "PROXe",
+    kind: "AI Customer System",
+    line: "AI lead conversion. Replies to every enquiry in seconds, qualifies it, and books it in or hands it to your team, day and night.",
+    handles: "DMs · forms · chat",
+    image: "/unsplash/proxe-qbC9hh0a.webp",
+    alt: "A café owner behind the counter, ready to take orders",
+  },
+  {
     slug: "smartsite",
     name: "Smartsite",
     kind: "Website & lead generation",
@@ -111,13 +120,13 @@ export const services = [
     alt: "A branded shop window display",
   },
   {
-    slug: "proxe",
-    name: "PROXe",
-    kind: "AI Customer System",
-    line: "AI lead conversion. Replies to every enquiry in seconds, qualifies it, and books it in or hands it to your team, day and night.",
-    handles: "DMs · forms · chat",
-    image: "/unsplash/proxe-qbC9hh0a.webp",
-    alt: "A café owner behind the counter, ready to take orders",
+    slug: "myaim",
+    name: "MyAIM",
+    kind: "AI Social Media Manager",
+    line: "Your AI social media manager, specialised for convenience stores. It plans your posts, creates them, markets your offers and turns followers into sales.",
+    handles: "Think · Create · Market · Sales",
+    image: "/unsplash/erpnext-BNBA1h-N.webp",
+    alt: "Shop shelving stacked with boxed stock",
   },
   {
     slug: "ai-receptionist",
@@ -145,15 +154,6 @@ export const services = [
     handles: "Stock · sales · accounts",
     image: "/unsplash/erpnext-BNBA1h-N.webp",
     alt: "Warehouse shelving stacked with boxed stock",
-  },
-  {
-    slug: "myaim",
-    name: "MyAIM",
-    kind: "AI Social Media Manager",
-    line: "Your AI social media manager, specialised for convenience stores. It plans your posts, creates them, markets your offers and turns followers into sales.",
-    handles: "Think · Create · Market · Sales",
-    image: "/unsplash/erpnext-BNBA1h-N.webp",
-    alt: "Shop shelving stacked with boxed stock",
   },
   {
     slug: "marketing",

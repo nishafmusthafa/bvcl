@@ -33,11 +33,12 @@ export const homeSections = {
   services: {
     label: "Services",
     anchor: "services",
-    description: "The service menu: Smartsite, PROXe, Dialgen.AI, VisorFlow, ERPNext, MyAIM and marketing.",
+    description: "The service menu: PROXe, Smartsite, MyAIM, Dialgen.AI, VisorFlow, ERPNext and marketing.",
     defaults: {
       title: "Seven services. One brain behind them.",
       intro: "Each is sold separately. Use one, or join them up. Together they share the same data, so nothing gets re-typed.",
       items: c.services,
+      addon: "Optional AI plugins & integrations",
       helpPrompt: "Not sure where to start?",
       helpLabel: "Help me choose",
     },
