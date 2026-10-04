@@ -3,6 +3,11 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.2.5] - 2026-10-04
+
+### Changed
+- Services list: the Smartsite description now starts "AI-enabled customer-facing website" (was "A complete customer-facing website").
+
 ## [0.2.4] - 2026-10-04
 
 ### Changed
@@ -94,6 +99,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.2.5]: https://github.com/nishafmusthafa/bvcl/compare/v0.2.4...v0.2.5
 [0.2.4]: https://github.com/nishafmusthafa/bvcl/compare/v0.2.3...v0.2.4
 [0.2.3]: https://github.com/nishafmusthafa/bvcl/compare/v0.2.2...v0.2.3
 [0.2.2]: https://github.com/nishafmusthafa/bvcl/compare/v0.2.1...v0.2.2
