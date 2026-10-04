@@ -22,12 +22,12 @@ export const homeSections = {
   why: {
     label: "Why we exist",
     anchor: "why-title",
-    description: "The problem statement and the three problems we fix.",
+    description: "The problem statement: seven everyday problems and the service that fixes each.",
     defaults: {
       title: "Most businesses don't need more software.",
-      subtitle: "They need fewer missed calls, faster replies and one version of the truth.",
+      subtitle: "They need the leaks fixed. Here is where each of our seven services steps in.",
       problems: c.problems,
-      closing: "We built Bakervaughn to fix all three, with one team and one connected system.",
+      closing: "One team, seven services, one connected system. Start with the problem that costs you most.",
     },
   },
   services: {

@@ -3,6 +3,12 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.4.0] - 2026-10-05
+
+### Changed
+- "Why we exist" section now covers all seven services: seven everyday problems in services-menu order, each tagged with the service that fixes it (with its colour) and a short explanation of how it helps the business. New subtitle and closing line.
+- The sample-ticket panel beside the list is sticky on desktop, so it stays in view instead of stretching to the longer list.
+
 ## [0.3.3] - 2026-10-05
 
 ### Fixed
@@ -127,6 +133,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.4.0]: https://github.com/nishafmusthafa/bvcl/compare/v0.3.3...v0.4.0
 [0.3.3]: https://github.com/nishafmusthafa/bvcl/compare/v0.3.2...v0.3.3
 [0.3.2]: https://github.com/nishafmusthafa/bvcl/compare/v0.3.1...v0.3.2
 [0.3.1]: https://github.com/nishafmusthafa/bvcl/compare/v0.3.0...v0.3.1

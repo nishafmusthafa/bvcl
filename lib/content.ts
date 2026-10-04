@@ -82,21 +82,57 @@ export const demoPrompts = [
   { label: "New enquiry", ticket: "catering" },
 ];
 
+// One everyday problem per service, in the same order as the services menu,
+// with what that service changes for the business.
 export const problems = [
   {
     n: "i.",
-    title: "Enquiries go unanswered",
-    body: "Calls ring out after hours and DMs sit unread while the team is busy.",
+    title: "Enquiries go cold",
+    slug: "proxe",
+    service: "PROXe",
+    body: "Every DM, form and chat gets a reply in seconds, is qualified, then booked in or handed to your team. Leads stop waiting until morning.",
   },
   {
     n: "ii.",
-    title: "Data lives in ten places",
-    body: "Stock, sales and staff records sit in different tools that never agree.",
+    title: "The website just sits there",
+    slug: "smartsite",
+    service: "Smartsite",
+    body: "An AI-enabled site that captures the enquiry and follows it up, so the website brings customers in instead of only describing you.",
   },
   {
     n: "iii.",
+    title: "Social media keeps slipping",
+    slug: "myaim",
+    service: "MyAIM",
+    body: "Plans, creates and posts your offers every day, built for convenience stores. The shop stays visible without anyone giving up an evening.",
+  },
+  {
+    n: "iv.",
+    title: "Calls ring out",
+    slug: "ai-receptionist",
+    service: "Dialgen.AI",
+    body: "Answers every call, handles the common questions and takes bookings, even when you're busy or closed. No more lost bookings to voicemail.",
+  },
+  {
+    n: "v.",
     title: "Compliance is a scramble",
-    body: "Right-to-work checks and sponsor duties get chased at the last minute.",
+    slug: "visorflow",
+    service: "VisorFlow",
+    body: "Right-to-work, rotas and payroll in one place, with alerts before anything lapses. A UKVI audit becomes a folder, not a panic.",
+  },
+  {
+    n: "vi.",
+    title: "Data lives in ten places",
+    slug: "faircode-erpnext",
+    service: "Faircodeme ERPNext",
+    body: "Stock, sales and accounts in one system that grows with you, with no per-user licence fees. One set of numbers everyone trusts.",
+  },
+  {
+    n: "vii.",
+    title: "Marketing you can't measure",
+    slug: "marketing",
+    service: "Marketing & branding",
+    body: "Brand, ads and local SEO tied to real enquiries, so you can see which spend actually pays and drop what doesn't.",
   },
 ];
 
