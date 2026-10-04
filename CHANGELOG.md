@@ -3,6 +3,11 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.2.4] - 2026-10-04
+
+### Changed
+- Hero VisorFlow card: label "VisorFlow" with the description "HR & Compliance, UKVI" (was "VisorFlow · Payroll"). The card moves up slightly so it no longer touches the Marketing card.
+
 ## [0.2.3] - 2026-10-04
 
 ### Changed
@@ -89,6 +94,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.2.4]: https://github.com/nishafmusthafa/bvcl/compare/v0.2.3...v0.2.4
 [0.2.3]: https://github.com/nishafmusthafa/bvcl/compare/v0.2.2...v0.2.3
 [0.2.2]: https://github.com/nishafmusthafa/bvcl/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/nishafmusthafa/bvcl/compare/v0.2.0...v0.2.1

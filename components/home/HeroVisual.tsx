@@ -200,7 +200,8 @@ function StockCard() {
 function PayrollCard() {
   return (
     <div className={`${glass} p-4`}>
-      <Tag color={serviceColor.visorflow}>VisorFlow · Payroll</Tag>
+      <Tag color={serviceColor.visorflow}>VisorFlow</Tag>
+      <p className="mt-1 text-[13px] leading-snug text-text">HR &amp; Compliance, UKVI</p>
       <div className="mt-2 flex items-baseline justify-between gap-2">
         <p className="text-2xl font-bold tracking-[-0.02em] text-text">£48,210</p>
         <p className="text-[11px] text-text-3">32 staff</p>
@@ -389,7 +390,7 @@ function DesktopCollage() {
       <Float className="top-[24%] left-[31%] z-30 w-[264px]" delay={1.2} depth={30} i={2}>
         <StockCard />
       </Float>
-      <Float className="top-[41%] right-0 z-20 w-[250px]" delay={0.8} depth={16} i={3}>
+      <Float className="top-[39%] right-0 z-20 w-[250px]" delay={0.8} depth={16} i={3}>
         <PayrollCard />
       </Float>
       <Float className="right-[5%] bottom-0 z-30 w-[262px]" delay={1.6} depth={26} i={4}>
