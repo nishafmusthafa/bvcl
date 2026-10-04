@@ -5,7 +5,7 @@ Next.js 16 / React 19 site with a Supabase-backed admin panel. See README.md, AD
 - Repo: https://github.com/nishafmusthafa/bvcl (`origin`), forked from https://github.com/bconclub/bakervaughn (`upstream`).
 - Deploy: Vercel project `bvcl`, production on push to `main`.
 - Env: see `.env.example`. Real values live in `.env.local` (git-ignored) and Vercel project settings.
-- Version: `package.json` is the source (`next.config.ts` passes it to `lib/version.ts`); keep `package-lock.json` in step.
+- Version: `package.json` is the source (`next.config.ts` passes it to `lib/version.ts`). Bump with `npm version <x.y.z> --no-git-tag-version`, never find-and-replace (it hits dependencies with the same version).
 - Check: `npx tsc --noEmit`, `npm run lint`, `npm run build`. No test suite yet.
 
 ## Build process (follow on every task)
