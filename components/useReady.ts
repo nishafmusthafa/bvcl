@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 
 declare global {
   interface Window {
@@ -8,19 +8,27 @@ declare global {
   }
 }
 
+let timedOut = false;
+
+function subscribe(onChange: () => void) {
+  const onTimeout = () => {
+    timedOut = true;
+    onChange();
+  };
+  window.addEventListener("bv:ready", onChange, { once: true });
+  const t = window.setTimeout(onTimeout, 6000);
+  return () => {
+    window.removeEventListener("bv:ready", onChange);
+    window.clearTimeout(t);
+  };
+}
+
 // True once the loading screen starts lifting ("bv:ready"). Falls back after
 // a few seconds so nothing waits forever if the loader never runs.
 export function useReady() {
-  const [ready, setReady] = useState(false);
-  useEffect(() => {
-    if (window.__bvReady) return setReady(true);
-    const on = () => setReady(true);
-    window.addEventListener("bv:ready", on, { once: true });
-    const t = window.setTimeout(on, 6000);
-    return () => {
-      window.removeEventListener("bv:ready", on);
-      window.clearTimeout(t);
-    };
-  }, []);
-  return ready;
+  return useSyncExternalStore(
+    subscribe,
+    () => !!window.__bvReady || timedOut,
+    () => false,
+  );
 }

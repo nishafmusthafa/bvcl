@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useEffect, useRef, useState } from "react";
+import { createContext, useContext, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { Check, PackageCheck, PhoneCall, Sparkles } from "lucide-react";
 import { LogoMark } from "@/components/BrandLogo";
 import { reducedMotion } from "@/lib/gsap";
@@ -255,15 +255,22 @@ function Backdrop() {
 const STAGE_W = 620;
 const STAGE_H = 640;
 
+const FINE_POINTER = "(pointer: fine)";
+
+function subscribeFinePointer(onChange: () => void) {
+  const mq = matchMedia(FINE_POINTER);
+  mq.addEventListener("change", onChange);
+  return () => mq.removeEventListener("change", onChange);
+}
+
 export default function HeroVisual() {
   const ready = useReady();
   const box = useRef<HTMLDivElement>(null);
   const [scale, setScale] = useState<number | null>(null);
-  const [fine, setFine] = useState(false);
+  const fine = useSyncExternalStore(subscribeFinePointer, () => matchMedia(FINE_POINTER).matches, () => false);
 
   useEffect(() => {
     const el = box.current!;
-    setFine(matchMedia("(pointer: fine)").matches);
     setScale(Math.min(1, el.clientWidth / STAGE_W)); // measure now; the observer keeps it current
     const ro = new ResizeObserver(([e]) => setScale(Math.min(1, e.contentRect.width / STAGE_W)));
     ro.observe(el);
