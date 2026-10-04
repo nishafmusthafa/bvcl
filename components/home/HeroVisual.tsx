@@ -189,9 +189,9 @@ function StockCard() {
         <PackageCheck size={16} />
       </span>
       <div className="min-w-0">
-        <Tag color={serviceColor["faircode-erpnext"]}>Faircode ERPNext · Stock</Tag>
-        <p className="mt-1 text-[13px] leading-snug text-text">SKU A-104 running low</p>
-        <p className="text-[11px] leading-snug text-text-3">Reorder sent to supplier automatically</p>
+        <Tag color={serviceColor["faircode-erpnext"]}>Faircode ERPNext</Tag>
+        <p className="mt-1 text-[13px] leading-snug text-text">System built to any scale</p>
+        <p className="text-[11px] leading-snug text-text-3">SKU A-104 low · reorder sent</p>
       </div>
     </div>
   );

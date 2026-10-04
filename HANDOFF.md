@@ -7,7 +7,7 @@ Run the Baker Vaughn site (fork of `bconclub/bakervaughn`) from `nishafmusthafa/
 
 ## Live state
 - Local: `C:\Builds\BVCL`, git on `main`. Remotes: `origin` = nishafmusthafa/bvcl, `upstream` = bconclub/bakervaughn.
-- Version: 0.2.2 (tag `v0.2.2`). Seven products: Smartsite, PROXe, Dialgen.AI, VisorFlow, Faircode ERPNext, MyAIM, Marketing & branding (`lib/content.ts` `services`). Releases v0.0.2 onward are tagged.
+- Version: 0.2.3 (tag `v0.2.3`). Seven products: Smartsite, PROXe, Dialgen.AI, VisorFlow, Faircode ERPNext, MyAIM, Marketing & branding (`lib/content.ts` `services`). Releases v0.0.2 onward are tagged.
 - Vercel: project `bvcl`, framework Next.js, production deploys on push to `main`. Domain `bvcl-bvcl.vercel.app`, currently behind Vercel Authentication (visitors see a Vercel login).
 - Supabase: keys in `.env.local` (git-ignored) and in Vercel env vars. Public CMS reads fail until the v0.0.6 grant is run.
 - Dev server: `npm run dev` on :3000. `C:\Builds\.claude\launch.json` has the `bvcl-dev` config for the Claude browser pane.

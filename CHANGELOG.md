@@ -3,6 +3,14 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.2.3] - 2026-10-04
+
+### Changed
+- Hero Faircode card: label shows the full product name "Faircode ERPNext" with the description "System built to any scale"; the stock alert is one line.
+
+### Fixed
+- `package-lock.json`: restored `yocto-queue` to 0.1.0 after version bumps since 0.2.0 overwrote it.
+
 ## [0.2.2] - 2026-10-04
 
 ### Changed
@@ -81,6 +89,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.2.3]: https://github.com/nishafmusthafa/bvcl/compare/v0.2.2...v0.2.3
 [0.2.2]: https://github.com/nishafmusthafa/bvcl/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/nishafmusthafa/bvcl/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/nishafmusthafa/bvcl/compare/v0.1.0...v0.2.0
