@@ -148,8 +148,8 @@ export const services = [
   },
   {
     slug: "faircode-erpnext",
-    name: "Faircode ERPNext",
-    kind: "ERP platform",
+    name: "ERPNext",
+    kind: "Faircodeme",
     line: "Accounts, stock, sales and HR in one open-source system, set up and supported by us. No per-user licence fees.",
     handles: "Stock · sales · accounts",
     image: "/unsplash/erpnext-BNBA1h-N.webp",

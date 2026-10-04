@@ -3,6 +3,11 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.3.2] - 2026-10-05
+
+### Changed
+- Services, Faircode row: the line above the title reads "Faircodeme" and the title reads "ERPNext" (was "ERP platform" / "Faircode ERPNext"). The footer link follows the title.
+
 ## [0.3.1] - 2026-10-05
 
 ### Added
@@ -117,6 +122,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.3.2]: https://github.com/nishafmusthafa/bvcl/compare/v0.3.1...v0.3.2
 [0.3.1]: https://github.com/nishafmusthafa/bvcl/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/nishafmusthafa/bvcl/compare/v0.2.5...v0.3.0
 [0.2.5]: https://github.com/nishafmusthafa/bvcl/compare/v0.2.4...v0.2.5
