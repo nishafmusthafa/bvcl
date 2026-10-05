@@ -56,11 +56,11 @@ export const homeSections = {
   connect: {
     label: "How it connects",
     anchor: "connect",
-    description: "The five connected stages, from first click to payroll.",
+    description: "The five connected stages: one loop where every service feeds the next.",
     defaults: {
       eyebrow: "How it all connects",
-      title: "First click to payroll. Nothing re-typed.",
-      intro: "Each service works on its own. Connected, the data flows from one stage to the next without anyone typing it twice.",
+      title: "One loop. Every service feeds the next.",
+      intro: "Each service works on its own. Connected, customers come in, get answered and get served, and what you learn brings the next ones in. Nothing is typed twice.",
       steps: c.flowSteps,
     },
   },

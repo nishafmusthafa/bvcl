@@ -203,9 +203,9 @@ export const services = [
 ];
 
 export const flowSteps = [
-  { title: "Attract", service: "Marketing & branding + MyAIM", caption: "Brand, ads, local SEO and daily social posts bring enquiries in." },
+  { title: "Attract", service: "Smartsite + MyAIM + Marketing", caption: "Your website, daily social posts, ads and local SEO bring enquiries in." },
   { title: "Answer", service: "PROXe + Dialgen.AI (AI Receptionist)", caption: "Every message, form and call answered, qualified and booked." },
-  { title: "Run", service: "Faircode ERPNext", caption: "Orders, stock and accounts land in one place. Nothing re-typed." },
+  { title: "Run", service: "Faircodeme ERPNext", caption: "Orders, stock and accounts land in one place. Nothing re-typed." },
   { title: "Staff", service: "VisorFlow", caption: "Rotas, right-to-work and payroll, posting straight to the accounts." },
   { title: "Learn", service: "Back to marketing", caption: "Sales data shows which campaigns actually pay." },
 ];
