@@ -34,6 +34,9 @@ Status: todo / doing / done / blocked. Newest items at the bottom.
 | T29 | VisorFlow and Marketing have no logo yet | todo | Needs logo files from the user |
 | T33 | Second section ("Why we exist"): content for all 7 services, each a short explanation of how it helps businesses | done | v0.4.0. tsc, lint, build pass. 7 items render with service tag and explanation. Desktop: ticket panel sticky (720px, pinned at 96px while scrolling). 375px: stacked, no x-overflow. No invented figures |
 | T35 | Contact details on the last page: email connect@bvcl.com, phone 07770077784 | done | v0.4.1. tsc, lint, build pass. mailto:connect@bvcl.com and tel:+447770077784 in contact section (44px tap targets) and footer; no placeholders left; 375px no x-overflow |
+| T45 | Case studies: add Khaleej Mandi House (AI Receptionist deployment) and 1 Key Solution (lead conversion implementation); remove Souq Al Samak, Norwood survey, KLUCK; add Arabian Grill (ERP system and digital marketing) | done | v0.5.0. tsc, lint, build pass. 3 projects render in order with tags, images, 3 docket fields; old three gone. 375px no x-overflow. DB migration archives old, inserts new |
+| T46 | Confirm the drafted case-study challenge lines; send real outcomes; 1 Key Solution business type | blocked | User |
+| T47 | Run `20261006130000_work_case_studies.sql` in Supabase (with T10), else /admin shows the old projects | blocked | User |
 | T44 | Team section: founding year 2018 (team size removed at user's request) | done | v0.4.5. tsc, lint, build pass. Note reads "Founded 2018"; no "team of" text on the page |
 | T43 | Email is connect@bvcl.uk, not .com | done | v0.4.4. Footer mailto:connect@bvcl.uk; no bvcl.com left in page HTML |
 | T42 | Team: Austin's line, "visionary mind and growth strategies", drawn from his SDA bio | done | v0.4.4. tsc, lint, build pass. Line renders as body text; three cards equal height (540px); 375px no x-overflow |

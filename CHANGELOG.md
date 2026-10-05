@@ -3,6 +3,15 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.5.0] - 2026-10-05
+
+### Added
+- Case studies: Khaleej Mandi House (AI Receptionist deployment, Dialgen.AI), 1 Key Solution (lead conversion implementation, PROXe) and Arabian Grill (ERP system and digital marketing). Challenge lines are drafts to confirm; outcomes stay `[ADD RESULT]` until there are real figures.
+- Migration `supabase/migrations/20261006130000_work_case_studies.sql` archives the old projects and inserts the new ones, so /admin matches once collections are readable.
+
+### Removed
+- Case studies: Souq Al Samak, KLUCK and Norwood survey (archived in the database, not deleted).
+
 ## [0.4.5] - 2026-10-05
 
 ### Changed
@@ -165,6 +174,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.5.0]: https://github.com/nishafmusthafa/bvcl/compare/v0.4.5...v0.5.0
 [0.4.5]: https://github.com/nishafmusthafa/bvcl/compare/v0.4.4...v0.4.5
 [0.4.4]: https://github.com/nishafmusthafa/bvcl/compare/v0.4.3...v0.4.4
 [0.4.3]: https://github.com/nishafmusthafa/bvcl/compare/v0.4.2...v0.4.3
