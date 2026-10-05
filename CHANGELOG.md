@@ -3,6 +3,11 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.5.8] - 2026-10-05
+
+### Changed
+- Team photos aligned to Austin's: his original photo is the reference, and Ninil's and Nishaf's headshots are scaled so the face size and eye position match his (eye centres within a few pixels). Where a scaled photo did not reach the frame edge, the background is extended with a blurred mirror of its own edges. Faces and clothing are not altered. Files: `austin.jpg` (unchanged), `ninil-matched.jpg`, `nishaf-matched.jpg`.
+
 ## [0.5.7] - 2026-10-05
 
 ### Changed
@@ -216,6 +221,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.5.8]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.7...v0.5.8
 [0.5.7]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.6...v0.5.7
 [0.5.6]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.5...v0.5.6
 [0.5.5]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.4...v0.5.5
