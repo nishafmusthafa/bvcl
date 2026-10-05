@@ -249,8 +249,8 @@ export const work = [
 
 export const leadership = [
   { name: "Austin Walters", role: "Managing Director", note: "The visionary mind behind our growth strategy. Started his first business at 14, sold two before 21, and brings business-rescue experience that finds options others miss.", photo: "/team/austin.jpg" },
-  { name: "Ninil Shyam", role: "Head of Development", note: "Committed to going the extra mile to keep every customer satisfied.", photo: "/team/ninil-matched.jpg" },
-  { name: "Nishaf Musthafa", role: "IT Manager", note: "Leads ERPNext and AI deployments for client businesses.", photo: "/team/nishaf-matched.jpg" },
+  { name: "Ninil Shyam", role: "Head of Development", note: "Committed to going the extra mile to keep every customer satisfied.", photo: "/team/ninil-office.jpg" },
+  { name: "Nishaf Musthafa", role: "IT Manager", note: "Leads ERPNext and AI deployments for client businesses.", photo: "/team/nishaf-office.jpg" },
 ];
 
 export const advisors = [

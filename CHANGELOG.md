@@ -3,7 +3,15 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
-## [0.5.9] - 2026-10-06
+## [0.5.10] - 2026-10-05
+
+### Changed
+- Ninil's and Nishaf's team photos now sit on Austin's own frosted-glass office background, at his face size and eye position, so all three look like one set. Austin's photo is unchanged. Where their original photos ended at the sides, the blazer is continued with fabric from its own edge. Faces are not altered. Files: `ninil-office.jpg`, `nishaf-office.jpg`.
+
+### Fixed
+- Date on the 0.5.9 entry.
+
+## [0.5.9] - 2026-10-05
 
 ### Fixed
 - Austin's surname is Walters (was "Walter"). Migration `20261006140000_people_austin_walters.sql` renames him in /admin too, so his photo and line still match.
@@ -226,6 +234,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.5.10]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.9...v0.5.10
 [0.5.9]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.8...v0.5.9
 [0.5.8]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.7...v0.5.8
 [0.5.7]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.6...v0.5.7
