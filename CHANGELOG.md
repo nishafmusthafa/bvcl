@@ -3,6 +3,14 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.4.3] - 2026-10-05
+
+### Added
+- Team section: Austin's headshot (`public/team/austin.jpg`, from sdabusinessrescue.co.uk/about-us). Team photos are framed toward the top so faces are not cropped. If the team later loads from /admin with no photo, the photo in code is used.
+
+### Changed
+- Footer offices: the "Office" label is removed from each city (head office keeps its label and address), and Aberdeen is removed.
+
 ## [0.4.2] - 2026-10-05
 
 ### Changed
@@ -144,6 +152,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.4.3]: https://github.com/nishafmusthafa/bvcl/compare/v0.4.2...v0.4.3
 [0.4.2]: https://github.com/nishafmusthafa/bvcl/compare/v0.4.1...v0.4.2
 [0.4.1]: https://github.com/nishafmusthafa/bvcl/compare/v0.4.0...v0.4.1
 [0.4.0]: https://github.com/nishafmusthafa/bvcl/compare/v0.3.3...v0.4.0

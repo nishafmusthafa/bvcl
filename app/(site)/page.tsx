@@ -32,8 +32,12 @@ export default async function Home() {
         alt: w.image_alt ?? "",
       }))
     : c.work.projects;
+  // A headshot uploaded in /admin wins; otherwise use the one in code for that person, if any.
+  const codePhoto = (name: string) => c.operators.leadership.find((l) => l.name === name)?.photo ?? null;
   const leadership = people
-    ? people.filter((p) => p.team === "leadership").map((p) => ({ name: p.name, role: p.role ?? "", note: p.bio ?? "", photo: p.photo_url }))
+    ? people
+        .filter((p) => p.team === "leadership")
+        .map((p) => ({ name: p.name, role: p.role ?? "", note: p.bio ?? "", photo: p.photo_url || codePhoto(p.name) }))
     : c.operators.leadership;
   const advisors = people
     ? people.filter((p) => p.team === "advisor").map((p) => ({ name: p.name, role: p.role ?? "" }))

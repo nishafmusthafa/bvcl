@@ -247,7 +247,7 @@ export const work = [
 ];
 
 export const leadership = [
-  { name: "Austin Walter", role: "Managing Director", note: "[ADD: one line on what Austin leads]" },
+  { name: "Austin Walter", role: "Managing Director", note: "[ADD: one line on what Austin leads]", photo: "/team/austin.jpg" },
   { name: "Ninil Shyam", role: "Head of Development", note: "[ADD: one line on what Ninil leads]" },
   { name: "Nishaf Musthafa", role: "IT Manager", note: "Leads ERPNext and AI deployments for client businesses." },
 ];
@@ -306,9 +306,8 @@ export const contact = {
 };
 
 // Only the head office shows an address.
-export const offices: { city: string; type: string; address?: string }[] = [
+export const offices: { city: string; type?: string; address?: string }[] = [
   { city: "Wales", type: "Head office", address: "Business Development Centre, Treforest, Wales CF37 5UR" },
-  { city: "Sheffield", type: "Office" },
-  { city: "Leicester", type: "Office" },
-  { city: "Aberdeen", type: "Office" },
+  { city: "Sheffield" },
+  { city: "Leicester" },
 ];

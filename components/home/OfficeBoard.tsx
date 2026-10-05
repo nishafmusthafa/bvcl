@@ -44,7 +44,7 @@ function Row({ o, i, go }: { o: HomeContent["footer"]["offices"][number]; i: num
           </address>
         )}
       </td>
-      <td className={`py-3 text-right whitespace-nowrap ${o.type === "Head office" ? "text-lamp" : "text-text-2"}`}>{o.type.toUpperCase()}</td>
+      <td className="py-3 text-right whitespace-nowrap text-lamp">{o.type?.toUpperCase()}</td>
     </tr>
   );
 }

@@ -29,7 +29,7 @@ export default function Operators({ c }: { c: Omit<HomeContent["operators"], "le
               <div className="relative grid aspect-[5/4] place-items-center overflow-hidden border-b border-line bg-surface">
                 {p.photo ? (
                   // eslint-disable-next-line @next/next/no-img-element -- headshots uploaded from /admin
-                  <img src={p.photo} alt={p.name} loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+                  <img src={p.photo} alt={p.name} loading="lazy" className="absolute inset-0 h-full w-full object-cover object-[50%_20%]" />
                 ) : (
                   <>
                     <span className="display text-[5rem] text-line" aria-hidden data-parallax="24">
