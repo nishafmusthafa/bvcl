@@ -247,7 +247,7 @@ export const work = [
 ];
 
 export const leadership = [
-  { name: "Austin Walter", role: "Managing Director", note: "[ADD: one line on what Austin leads]", photo: "/team/austin.jpg" },
+  { name: "Austin Walter", role: "Managing Director", note: "The visionary mind behind our growth strategy. Started his first business at 14, sold two before 21, and brings business-rescue experience that finds options others miss.", photo: "/team/austin.jpg" },
   { name: "Ninil Shyam", role: "Head of Development", note: "[ADD: one line on what Ninil leads]" },
   { name: "Nishaf Musthafa", role: "IT Manager", note: "Leads ERPNext and AI deployments for client businesses." },
 ];
@@ -301,7 +301,7 @@ export const beliefs = [
 ];
 
 export const contact = {
-  email: "connect@bvcl.com",
+  email: "connect@bvcl.uk",
   phone: "07770 077784",
 };
 

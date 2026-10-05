@@ -3,6 +3,14 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.4.4] - 2026-10-05
+
+### Changed
+- Team: Austin's line reads "The visionary mind behind our growth strategy. Started his first business at 14, sold two before 21, and brings business-rescue experience that finds options others miss." (drawn from his SDA bio). When the team loads from /admin, an empty bio or photo falls back to the code entry.
+
+### Fixed
+- Contact email is connect@bvcl.uk (0.4.1 had connect@bvcl.com).
+
 ## [0.4.3] - 2026-10-05
 
 ### Added
@@ -152,6 +160,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.4.4]: https://github.com/nishafmusthafa/bvcl/compare/v0.4.3...v0.4.4
 [0.4.3]: https://github.com/nishafmusthafa/bvcl/compare/v0.4.2...v0.4.3
 [0.4.2]: https://github.com/nishafmusthafa/bvcl/compare/v0.4.1...v0.4.2
 [0.4.1]: https://github.com/nishafmusthafa/bvcl/compare/v0.4.0...v0.4.1
