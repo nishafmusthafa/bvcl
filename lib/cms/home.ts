@@ -85,7 +85,7 @@ export const homeSections = {
         "Our leadership has spent more than 15 years in UK food, retail and hospitality. We know what a Friday-night rush, a supplier shortfall and a Home Office audit feel like, because we've lived them.",
         "We rolled out ERPNext across our own businesses first. Then came the problems ERP couldn't solve: missed calls, slow replies and sponsor-licence paperwork. So we built PROXe, Dialgen.AI (our AI receptionist) and VisorFlow.",
       ],
-      note: "[ADD: founding year and team size]",
+      note: "Founded 2018",
       leadership: c.leadership,
       advisorsLabel: "Advisory board",
       advisors: c.advisors,

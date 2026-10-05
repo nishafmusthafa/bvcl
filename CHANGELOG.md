@@ -3,6 +3,11 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.4.5] - 2026-10-05
+
+### Changed
+- Team section: the `[ADD: founding year and team size]` placeholder now reads "Founded 2018".
+
 ## [0.4.4] - 2026-10-05
 
 ### Changed
@@ -160,6 +165,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.4.5]: https://github.com/nishafmusthafa/bvcl/compare/v0.4.4...v0.4.5
 [0.4.4]: https://github.com/nishafmusthafa/bvcl/compare/v0.4.3...v0.4.4
 [0.4.3]: https://github.com/nishafmusthafa/bvcl/compare/v0.4.2...v0.4.3
 [0.4.2]: https://github.com/nishafmusthafa/bvcl/compare/v0.4.1...v0.4.2
