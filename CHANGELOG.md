@@ -3,6 +3,15 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.5.4] - 2026-10-05
+
+### Added
+- Team photos for Ninil Shyam and Nishaf Musthafa (`public/team/`), cropped to 768x960 head-and-shoulders portraits from the supplied photos. Crop and resize only; nothing retouched.
+- Ninil's line: "Committed to going the extra mile to keep every customer satisfied."
+
+### Changed
+- Team photos are anchored to the top of the frame so no one's head is cut off.
+
 ## [0.5.3] - 2026-10-05
 
 ### Changed
@@ -192,6 +201,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.5.4]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.3...v0.5.4
 [0.5.3]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.2...v0.5.3
 [0.5.2]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.1...v0.5.2
 [0.5.1]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.0...v0.5.1
