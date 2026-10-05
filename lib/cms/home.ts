@@ -130,8 +130,6 @@ export const homeSections = {
       title: "Tell us the one thing costing you most.",
       body: "A free consultation, no obligation. Tell us how your business runs today and we'll show you where one connected system saves the most time.",
       ctaLabel: "Book a free consultation",
-      email: c.contact.email,
-      phone: c.contact.phone,
     },
   },
   footer: {
@@ -143,7 +141,7 @@ export const homeSections = {
       email: c.contact.email,
       phone: c.contact.phone,
       companyNumber: "[NUMBER]",
-      officesLabel: "Offices · local time",
+      officesLabel: "Offices",
       offices: c.offices,
     },
   },

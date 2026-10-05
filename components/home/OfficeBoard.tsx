@@ -32,34 +32,19 @@ function Flap({ text, delay, go }: { text: string; delay: number; go: boolean })
   return <span aria-hidden>{shown}</span>;
 }
 
-function useClock(tz: string | null) {
-  const [t, setT] = useState("--:--");
-  useEffect(() => {
-    if (!tz) return;
-    let fmt: Intl.DateTimeFormat;
-    try {
-      fmt = new Intl.DateTimeFormat("en-GB", { hour: "2-digit", minute: "2-digit", timeZone: tz });
-    } catch {
-      return; // unknown time zone typed in the CMS: leave the placeholder
-    }
-    const update = () => setT(fmt.format(new Date()));
-    update();
-    const id = window.setInterval(update, 15000);
-    return () => window.clearInterval(id);
-  }, [tz]);
-  return t;
-}
-
 function Row({ o, i, go }: { o: HomeContent["footer"]["offices"][number]; i: number; go: boolean }) {
-  const time = useClock(o.tz);
   return (
-    <tr className="border-b border-line-soft">
+    <tr className="border-b border-line-soft align-top">
       <td className="py-3 pr-4 text-text">
         <span className="sr-only">{o.city}</span>
         <Flap text={o.city.toUpperCase()} delay={i * 90} go={go} />
+        {o.address && (
+          <address className="mt-1 font-sans text-sm leading-snug tracking-normal text-text-2 normal-case not-italic">
+            {o.address}
+          </address>
+        )}
       </td>
-      <td className={`py-3 pr-4 ${o.type.startsWith("[ADD") ? "text-text-3" : "text-text-2"}`}>{o.type.toUpperCase()}</td>
-      <td className="py-3 text-right text-lamp tabular-nums">{time}</td>
+      <td className={`py-3 text-right whitespace-nowrap ${o.type === "Head office" ? "text-lamp" : "text-text-2"}`}>{o.type.toUpperCase()}</td>
     </tr>
   );
 }
@@ -75,12 +60,11 @@ export default function OfficeBoard({ offices }: { offices: HomeContent["footer"
 
   return (
     <table ref={ref} className="w-full border-t border-line-soft font-mono text-[13px] uppercase tracking-[0.06em]">
-      <caption className="sr-only">Bakervaughn offices and local time</caption>
+      <caption className="sr-only">Bakervaughn offices</caption>
       <thead className="sr-only">
         <tr>
           <th>Office</th>
           <th>Type</th>
-          <th>Local time</th>
         </tr>
       </thead>
       <tbody>

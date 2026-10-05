@@ -34,6 +34,8 @@ Status: todo / doing / done / blocked. Newest items at the bottom.
 | T29 | VisorFlow and Marketing have no logo yet | todo | Needs logo files from the user |
 | T33 | Second section ("Why we exist"): content for all 7 services, each a short explanation of how it helps businesses | done | v0.4.0. tsc, lint, build pass. 7 items render with service tag and explanation. Desktop: ticket panel sticky (720px, pinned at 96px while scrolling). 375px: stacked, no x-overflow. No invented figures |
 | T35 | Contact details on the last page: email connect@bvcl.com, phone 07770077784 | done | v0.4.1. tsc, lint, build pass. mailto:connect@bvcl.com and tel:+447770077784 in contact section (44px tap targets) and footer; no placeholders left; 375px no x-overflow |
+| T38 | Remove email and phone from the second-last section (orange contact section); keep in footer | done | v0.4.2. Contact section has only the consultation button; footer keeps mailto and tel links |
+| T37 | Offices: remove local time; address only for HQ (Business Development Centre, Treforest, Wales CF37 5UR) | done | v0.4.2. tsc, lint, build pass. No clock digits in the board, label "Offices"; address under Wales in normal case; HEAD OFFICE on one line; 375px table 343px, no x-overflow |
 | T36 | Footer company number still `[NUMBER]` | blocked | User: send company number |
 | T34 | Real client results for Work section (all three still `[ADD RESULT]`) | blocked | User: send real outcomes per client |
 | T32 | Correction to T31: main title "Faircodeme", line above it "ERPNext" | done | v0.3.3. tsc, lint, build pass. Row reads 06 ERPNext / Faircodeme; title one line at 375px, no x-overflow; footer link Faircodeme |

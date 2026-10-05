@@ -21,14 +21,6 @@ export function Close({ c }: { c: HomeContent["close"] }) {
           <EnquiryButton source="close" variant="ink" className="mt-8">
             {c.ctaLabel}
           </EnquiryButton>
-          <p className="mt-6 flex flex-wrap gap-x-6 text-lg font-semibold">
-            <a href={`mailto:${c.email}`} className="inline-flex min-h-11 items-center underline-offset-4 hover:underline">
-              {c.email}
-            </a>
-            <a href={telHref(c.phone)} className="inline-flex min-h-11 items-center underline-offset-4 hover:underline">
-              {c.phone}
-            </a>
-          </p>
         </div>
       </div>
     </section>

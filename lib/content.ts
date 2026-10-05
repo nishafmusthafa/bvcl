@@ -305,9 +305,10 @@ export const contact = {
   phone: "07770 077784",
 };
 
-export const offices = [
-  { city: "Wales", type: "Head office", tz: "Europe/London" },
-  { city: "Sheffield", type: "Office", tz: "Europe/London" },
-  { city: "Leicester", type: "Office", tz: "Europe/London" },
-  { city: "Aberdeen", type: "Office", tz: "Europe/London" },
+// Only the head office shows an address.
+export const offices: { city: string; type: string; address?: string }[] = [
+  { city: "Wales", type: "Head office", address: "Business Development Centre, Treforest, Wales CF37 5UR" },
+  { city: "Sheffield", type: "Office" },
+  { city: "Leicester", type: "Office" },
+  { city: "Aberdeen", type: "Office" },
 ];
