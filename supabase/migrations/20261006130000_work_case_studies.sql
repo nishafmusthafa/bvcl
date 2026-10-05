@@ -19,6 +19,6 @@ select v.* from (values
   ('Arabian Grill', 'Restaurant', 'ERP system & digital marketing', 'One system behind the counter, and marketing that fills the tables',
    'Orders, stock and accounts sat in separate tools that never agreed, and there was no clear line from marketing spend to sales.',
    'Set up Faircodeme ERPNext so orders, stock and accounts live in one place, and ran the digital marketing: social content, ads and local SEO tied to real enquiries.',
-   null, '/unsplash/erpnext-BNBA1h-N.webp', 'Shelving stacked with boxed stock', 30)
+   null, '/unsplash/arabian-grill-0gSpvtwd.webp', 'Kofta kebab skewers on flatbread with hummus and grilled vegetables', 30)
 ) v(name, client, category, headline, challenge, what_we_did, outcome, image_url, image_alt, sort_order)
 where not exists (select 1 from public.work w where w.name = v.name);

@@ -3,6 +3,11 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.5.2] - 2026-10-05
+
+### Changed
+- Arabian Grill case study: stock photo is now Arabian-style grilled food (kofta skewers, flatbread, hummus; Unsplash, Husien Bisky), credited in `public/unsplash/_credits.json`. The unrun case-studies migration matches.
+
 ## [0.5.1] - 2026-10-05
 
 ### Changed
@@ -181,6 +186,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.5.2]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.1...v0.5.2
 [0.5.1]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.0...v0.5.1
 [0.5.0]: https://github.com/nishafmusthafa/bvcl/compare/v0.4.5...v0.5.0
 [0.4.5]: https://github.com/nishafmusthafa/bvcl/compare/v0.4.4...v0.4.5

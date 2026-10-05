@@ -242,8 +242,8 @@ export const work = [
     challenge: "Orders, stock and accounts sat in separate tools that never agreed, and there was no clear line from marketing spend to sales.",
     did: "Set up Faircodeme ERPNext so orders, stock and accounts live in one place, and ran the digital marketing: social content, ads and local SEO tied to real enquiries.",
     outcome: "[ADD RESULT: stock accuracy, time saved on accounts, enquiries from campaigns]",
-    image: "/unsplash/erpnext-BNBA1h-N.webp",
-    alt: "Shelving stacked with boxed stock",
+    image: "/unsplash/arabian-grill-0gSpvtwd.webp",
+    alt: "Kofta kebab skewers on flatbread with hummus and grilled vegetables",
   },
 ];
 
