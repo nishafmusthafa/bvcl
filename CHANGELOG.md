@@ -3,6 +3,11 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.5.5] - 2026-10-05
+
+### Changed
+- Ninil's and Nishaf's team photos: original backgrounds replaced with a soft light-grey studio backdrop like Austin's, and brightness, contrast and colour warmth matched to Austin's photo (exposure from the face, partial adjustment). Global tone and colour only; faces and features unchanged. New file names (`*-studio.jpg`) so browsers and the CDN don't show the old versions.
+
 ## [0.5.4] - 2026-10-05
 
 ### Added
@@ -201,6 +206,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.5.5]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.4...v0.5.5
 [0.5.4]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.3...v0.5.4
 [0.5.3]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.2...v0.5.3
 [0.5.2]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.1...v0.5.2
