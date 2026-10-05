@@ -3,6 +3,11 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.5.7] - 2026-10-05
+
+### Changed
+- Ninil's and Nishaf's team photos replaced with new professional headshots (`*-pro.jpg`), cropped to 768x960 only. The 0.5.5 studio versions are removed.
+
 ## [0.5.6] - 2026-10-05
 
 ### Fixed
@@ -211,6 +216,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.5.7]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.6...v0.5.7
 [0.5.6]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.5...v0.5.6
 [0.5.5]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.4...v0.5.5
 [0.5.4]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.3...v0.5.4
