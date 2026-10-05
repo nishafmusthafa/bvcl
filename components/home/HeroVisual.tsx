@@ -136,7 +136,7 @@ function Phone() {
           {chat.map((m, i) => (
             <p
               key={i}
-              className={`msg max-w-[84%] rounded-2xl px-2.5 py-1.5 text-[11px] leading-snug ${
+              className={`msg max-w-[92%] rounded-2xl px-2.5 py-1.5 text-[11px] leading-snug ${
                 m.me ? "self-start rounded-bl-md bg-white/[0.07] text-text" : "self-end rounded-br-md bg-lamp text-ink"
               }`}
               style={{ animationDelay: `${0.5 + i * 0.9}s` }}
@@ -144,11 +144,6 @@ function Phone() {
               {m.text}
             </p>
           ))}
-          <div className="msg flex gap-1 self-start rounded-2xl bg-white/[0.07] px-3 py-2" style={{ animationDelay: "4.2s" }}>
-            {[0, 1, 2].map((d) => (
-              <span key={d} className="typing size-1 rounded-full bg-text-3" style={{ animationDelay: `${d * 0.15}s` }} />
-            ))}
-          </div>
         </div>
         <div className="m-2 mt-0 rounded-full border border-white/10 px-3 py-1.5 text-[10px] text-text-3">Message…</div>
       </div>
@@ -386,7 +381,7 @@ function DesktopCollage() {
   return (
     <div className="relative h-full w-full">
       <Backdrop />
-      <Float className="top-[16%] left-0 z-20 h-[370px] w-[236px]" delay={0.4} depth={10} i={0}>
+      <Float className="top-[16%] left-[5%] z-20 h-[370px] w-[180px]" delay={0.4} depth={10} i={0}>
         <Phone />
       </Float>
       <Float className="top-0 right-0 z-30 w-[300px]" depth={22} i={1}>

@@ -3,6 +3,11 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.5.6] - 2026-10-05
+
+### Fixed
+- Hero phone mockup looked squashed (236x370, ratio 1.57). It is now 180x370 (ratio 2.06, like a real phone) and centred in its column. Chat bubbles are a little wider so the conversation still fits, and the trailing typing indicator is removed (its unused CSS too).
+
 ## [0.5.5] - 2026-10-05
 
 ### Changed
@@ -206,6 +211,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.5.6]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.5...v0.5.6
 [0.5.5]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.4...v0.5.5
 [0.5.4]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.3...v0.5.4
 [0.5.3]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.2...v0.5.3
