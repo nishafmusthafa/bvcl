@@ -3,6 +3,11 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.5.9] - 2026-10-06
+
+### Fixed
+- Austin's surname is Walters (was "Walter"). Migration `20261006140000_people_austin_walters.sql` renames him in /admin too, so his photo and line still match.
+
 ## [0.5.8] - 2026-10-05
 
 ### Changed
@@ -221,6 +226,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Baker Vaughn website redesign.
 - Supabase-backed admin panel for editing site sections, using row-level security (no service-role key in the app).
 
+[0.5.9]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.8...v0.5.9
 [0.5.8]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.7...v0.5.8
 [0.5.7]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.6...v0.5.7
 [0.5.6]: https://github.com/nishafmusthafa/bvcl/compare/v0.5.5...v0.5.6
