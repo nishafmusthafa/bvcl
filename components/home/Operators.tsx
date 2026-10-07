@@ -2,6 +2,16 @@ import type { HomeContent } from "@/lib/cms/home";
 
 type Leader = { name: string; role: string; note: string; photo?: string | null };
 
+// A brand's logo when there is one, otherwise its name as text.
+function Mark({ name, logo }: { name: string; logo?: string }) {
+  return logo ? (
+    // eslint-disable-next-line @next/next/no-img-element -- logos from /public or uploaded in /admin
+    <img src={logo} alt={name} loading="lazy" className="h-9 w-auto max-w-[160px] object-contain object-left" />
+  ) : (
+    <span className="font-semibold">{name}</span>
+  );
+}
+
 export default function Operators({ c }: { c: Omit<HomeContent["operators"], "leadership"> & { leadership: Leader[] } }) {
   return (
     <section id="operators" className="py-20 md:py-28" aria-labelledby="ops-title">
@@ -57,12 +67,37 @@ export default function Operators({ c }: { c: Omit<HomeContent["operators"], "le
           <ul className="grid grid-cols-2 gap-x-6 gap-y-5 lg:grid-cols-4">
             {c.advisors.map((a, i) => (
               <li key={i}>
-                <p className="font-semibold">{a.name}</p>
+                <p className="flex min-h-9 items-center">
+                  <Mark name={a.name} logo={a.logo} />
+                </p>
                 <p className="text-sm text-text-3">{a.role}</p>
               </li>
             ))}
           </ul>
         </div>
+
+        {c.partners.length > 0 && (
+          <div className="mt-8 grid gap-6 border-t border-line pt-8 md:grid-cols-[0.6fr_1.4fr]" data-reveal>
+            <p className="text-text-2">{c.partnersLabel}</p>
+            <ul className="grid grid-cols-2 gap-x-6 gap-y-5 lg:grid-cols-4">
+              {c.partners.map((p, i) => (
+                <li key={i}>
+                  <a
+                    href={p.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex min-h-11 flex-col justify-center transition-colors hover:text-lamp"
+                  >
+                    <span className="flex min-h-9 items-center">
+                      <Mark name={p.name} logo={p.logo} />
+                    </span>
+                    <span className="text-sm text-text-3 group-hover:text-text-2">{p.url.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </section>
   );

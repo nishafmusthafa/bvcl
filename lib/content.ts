@@ -253,12 +253,21 @@ export const leadership = [
   { name: "Nishaf Musthafa", role: "IT Manager", note: "Leads ERPNext and AI deployments for client businesses.", photo: "/team/nishaf-office.jpg" },
 ];
 
-export const advisors = [
+// logo: path under /public or a full URL; leave empty to show the name instead.
+export type Advisor = { name: string; role: string; logo?: string };
+
+export const advisors: Advisor[] = [
   { name: "Bridgeway Investments", role: "Growth" },
   { name: "Nitish Nair", role: "Growth" },
   { name: "Abhilash Kollat", role: "Strategy & analytics" },
   { name: "Thanzeel Ashruf", role: "Creative" },
   { name: "Aslej Salem", role: "Operations" },
+];
+
+// Technology partners, shown under the advisory board. Add a logo path once the file is in /public.
+export const partners: { name: string; url: string; logo?: string }[] = [
+  { name: "Soft Served Web", url: "https://www.softservedweb.com" },
+  { name: "BCON Club", url: "https://bconclub.com" },
 ];
 
 export const stages = [

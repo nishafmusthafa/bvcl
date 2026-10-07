@@ -44,8 +44,12 @@ export default async function Home() {
           photo: p.photo_url || codeLeader(p.name)?.photo || null,
         }))
     : c.operators.leadership;
+  // An advisor's image in /admin (the Headshot field) is shown as their logo.
+  const codeAdvisor = (name: string) => c.operators.advisors.find((a) => a.name === name);
   const advisors = people
-    ? people.filter((p) => p.team === "advisor").map((p) => ({ name: p.name, role: p.role ?? "" }))
+    ? people
+        .filter((p) => p.team === "advisor")
+        .map((p) => ({ name: p.name, role: p.role ?? "", logo: p.photo_url || codeAdvisor(p.name)?.logo || undefined }))
     : c.operators.advisors;
 
   return (

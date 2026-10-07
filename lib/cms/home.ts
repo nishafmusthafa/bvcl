@@ -89,6 +89,8 @@ export const homeSections = {
       leadership: c.leadership,
       advisorsLabel: "Advisory board",
       advisors: c.advisors,
+      partnersLabel: "Technology partners",
+      partners: c.partners,
     },
   },
   approach: {

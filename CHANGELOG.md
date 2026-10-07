@@ -3,6 +3,12 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.6.0] - 2026-10-07
+
+### Added
+- Technology partners row under the advisory board: Soft Served Web (softservedweb.com) and BCON Club (bconclub.com), each linking to its site in a new tab. Names show as text until logo files are added (`partners` in `lib/content.ts`).
+- Advisors can show a logo instead of their name: set `logo` in `lib/content.ts`, or upload an image in /admin > Team (the Headshot field). Used for Bridgeway Investments once its logo is uploaded.
+
 ## [0.5.11] - 2026-10-07
 
 ### Added
