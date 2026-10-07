@@ -22,23 +22,23 @@ export const homeSections = {
   why: {
     label: "Why we exist",
     anchor: "why-title",
-    description: "The problem statement: seven everyday problems and the service that fixes each.",
+    description: "The leaks: everyday problems, the service that fixes each, and the live feed.",
     defaults: {
-      title: "Most businesses don't need more software.",
-      subtitle: "They need the leaks fixed. Here is where each of our seven services steps in.",
+      title: "AI won't replace your business. It will replace the leaks.",
+      subtitle:
+        "Cold enquiries, missed calls, silent socials, stale content, expiring visas, numbers nobody trusts. Here's where each of our nine services steps in, day and night.",
       problems: c.problems,
-      closing: "One team, seven services, one connected system. Start with the problem that costs you most.",
+      closing: "One team, nine services, one connected system. Start with the leak that costs you most.",
     },
   },
   services: {
     label: "Services",
     anchor: "services",
-    description: "The service menu: PROXe, Smartsite, MyAIM, Dialgen.AI, VisorFlow, ERPNext and marketing.",
+    description: "The service menu: PROXe, Smartsite, MyAIM, Dialgen.AI, VisorFlow, ERPNext, marketing, Reelme and AI plugins.",
     defaults: {
-      title: "Seven services. One brain behind them.",
+      title: "Nine services. One brain behind them.",
       intro: "Each is sold separately. Use one, or join them up. Together they share the same data, so nothing gets re-typed.",
       items: c.services,
-      addon: "Optional AI plugins & integrations",
       helpPrompt: "Not sure where to start?",
       helpLabel: "Help me choose",
     },
@@ -145,6 +145,7 @@ export const homeSections = {
       companyNumber: "[NUMBER]",
       officesLabel: "Offices",
       offices: c.offices,
+      services: c.footerServices,
     },
   },
 };

@@ -3,6 +3,19 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.7.0] - 2026-10-07
+
+### Added
+- Reelme (AI Brand Shoots) as service 08: services list, problem list ("Content takes weeks", after MyAIM), footer links and the Attract step.
+- AI Plugins & integrations is now service 09 in the services list, replacing the "Optional AI plugins & integrations" line.
+
+### Changed
+- Leaks section: new headline ("AI won't replace your business. It will replace the leaks."), subhead and line under the feed; "seven services" is now "nine" there and in the services heading.
+- Live feed: nine new cards, one per service (#0145 to #0153), printing in number order; header reads "AI on shift 24/7". The "Scripted preview · synthetic data" note stays.
+- How it connects, Attract: Smartsite + MyAIM + Reelme + Marketing, now mentioning brand content.
+- Hero card renamed "Faircodeme ERPNext" to match the rest of the site.
+- Footer services links follow a fixed list (`footerServices` in `lib/content.ts`).
+
 ## [0.6.0] - 2026-10-07
 
 ### Added

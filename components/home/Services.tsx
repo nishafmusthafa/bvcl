@@ -1,4 +1,4 @@
-import { ArrowUpRight, Plus } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import type { HomeContent } from "@/lib/cms/home";
 import EnquiryButton from "@/components/enquiry/EnquiryButton";
 import { ServiceLogo, serviceColor } from "@/components/Logos";
@@ -75,10 +75,6 @@ export default function Services({ c }: { c: HomeContent["services"] }) {
             </li>
           ))}
         </ul>
-        <p className="flex items-center gap-3 border-b border-line py-6 text-lg text-text-2" data-reveal>
-          <Plus size={20} className="shrink-0 text-lamp" aria-hidden />
-          {c.addon}
-        </p>
 
         <div className="mt-10 flex flex-wrap items-center gap-4 text-text-2">
           <span>{c.helpPrompt}</span>

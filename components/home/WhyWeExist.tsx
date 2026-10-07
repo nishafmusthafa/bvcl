@@ -18,7 +18,7 @@ export default function WhyWeExist({ c }: { c: HomeContent["why"] }) {
         </div>
 
         <div className="mt-14 grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
-          {/* Sticky on desktop: stays beside the seven problems instead of stretching to their height. */}
+          {/* Sticky on desktop: stays beside the problems instead of stretching to their height. */}
           <div className="relative overflow-hidden rounded-[4px] bg-ground lg:sticky lg:top-24 lg:min-h-[720px] lg:self-start" data-reveal>
             <div
               aria-hidden

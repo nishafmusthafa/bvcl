@@ -4,7 +4,7 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react
 import { gsap, reducedMotion } from "@/lib/gsap";
 import { demoPrompts, tickets, type Ticket } from "@/lib/content";
 
-type Printed = { key: number; t: Ticket; no: number };
+type Printed = { key: number; t: Ticket };
 const byId = (id: string) => tickets.find((t) => t.id === id)!;
 const MAX = 3;
 const EVERY = 4200;
@@ -37,7 +37,7 @@ function TicketCard({ p, fresh }: { p: Printed; fresh: boolean }) {
     <div ref={ref} className="overflow-hidden" style={{ marginBottom: 12 }}>
       <article className="ticket relative px-5 pt-4 font-mono text-[13px] leading-[1.55] md:px-6">
         <div className="flex justify-between border-b border-dashed border-ink-2/40 pb-2 text-[11px] uppercase tracking-[0.06em] text-ink-2">
-          <span>#{String(p.no).padStart(4, "0")} · {t.channel}</span>
+          <span>#{String(t.no).padStart(4, "0")} · {t.channel}</span>
           <span>{t.time}</span>
         </div>
         <p className="mt-3 text-[14px] text-ink">“{t.message}”</p>
@@ -47,7 +47,7 @@ function TicketCard({ p, fresh }: { p: Printed; fresh: boolean }) {
         </p>
         <div className="mt-3 flex items-end justify-between gap-3">
           <span className="text-[11px] uppercase tracking-[0.06em] text-ink-2">
-            {t.service} · {t.outcome}
+            {t.service}
           </span>
           <span className="stamp shrink-0 -rotate-6 border-2 border-docket px-2 py-0.5 text-[11px] font-bold uppercase tracking-[0.08em] text-docket">
             {t.stamp}
@@ -60,7 +60,7 @@ function TicketCard({ p, fresh }: { p: Printed; fresh: boolean }) {
 
 export default function TicketRail() {
   const [printed, setPrinted] = useState<Printed[]>(() =>
-    [byId("rtw"), byId("table"), byId("stock")].map((t, i) => ({ key: i, t, no: 144 + i })).reverse(),
+    tickets.slice(0, 3).map((t, i) => ({ key: i, t })).reverse(),
   );
   const counter = useRef(3);
   const cursor = useRef(3);
@@ -70,7 +70,7 @@ export default function TicketRail() {
 
   const push = useCallback((t: Ticket) => {
     const n = counter.current++;
-    setPrinted((list) => [{ key: n, t, no: 144 + n }, ...list].slice(0, MAX));
+    setPrinted((list) => [{ key: n, t }, ...list].slice(0, MAX));
   }, []);
 
   const schedule = useCallback(() => {
@@ -103,7 +103,7 @@ export default function TicketRail() {
           <span className="font-mono text-[11px] uppercase tracking-[0.1em] text-text-2">Across your business</span>
           <span className="flex items-center gap-2 font-mono text-[11px] whitespace-nowrap uppercase tracking-[0.1em] text-lamp">
             <span className="size-2 animate-pulse rounded-full bg-lamp motion-reduce:animate-none" />
-            Live 24/7
+            AI on shift 24/7
           </span>
         </div>
         <div className="mx-3 h-2 bg-ground-deep shadow-[inset_0_2px_4px_oklch(0%_0_0/0.6)]" aria-hidden />

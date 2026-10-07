@@ -189,7 +189,7 @@ function StockCard() {
         <PackageCheck size={16} />
       </span>
       <div className="min-w-0">
-        <Tag slug="faircode-erpnext">Faircode ERPNext</Tag>
+        <Tag slug="faircode-erpnext">Faircodeme ERPNext</Tag>
         <p className="mt-1 text-[13px] leading-snug text-text">System built to any scale</p>
         <p className="text-[11px] leading-snug text-text-3">SKU A-104 low · reorder sent</p>
       </div>

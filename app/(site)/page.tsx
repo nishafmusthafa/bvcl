@@ -69,7 +69,7 @@ export default async function Home() {
         <Beliefs c={c.beliefs} />
         <Close c={c.close} />
       </main>
-      <Footer c={c.footer} services={c.services.items} />
+      <Footer c={c.footer} />
     </EnquiryProvider>
   );
 }

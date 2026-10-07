@@ -40,6 +40,8 @@ export const serviceColor: Record<string, string> = {
   "faircode-erpnext": "#4ade80",
   myaim: "#e879f9",
   marketing: "#fb7185",
+  reelme: "#fb923c",
+  "ai-plugins": "#a3e635",
 };
 
 export function ServiceMark({ slug, className = "size-6" }: MarkProps) {
@@ -99,6 +101,20 @@ export function ServiceMark({ slug, className = "size-6" }: MarkProps) {
           <rect {...p} x="3" y="5" width="14" height="14" rx="3" />
           <path {...p} d="M10 15.5s-3-1.7-3-3.6a1.5 1.5 0 0 1 3-.7 1.5 1.5 0 0 1 3 .7c0 1.9-3 3.6-3 3.6z" />
           <path {...p} d="M19.5 2.5v4M17.5 4.5h4" />
+        </>
+      )}
+      {slug === "reelme" && (
+        <>
+          <rect {...p} x="3" y="7" width="13" height="11" rx="2" />
+          <path {...p} d="M16 11l5-3v9l-5-3z" />
+          <path {...p} d="M6.5 4.5l1 2.5M10.5 4.5l1 2.5" />
+        </>
+      )}
+      {slug === "ai-plugins" && (
+        <>
+          <path {...p} d="M9 3v4M15 3v4" />
+          <path {...p} d="M6.5 7h11v4a5.5 5.5 0 0 1-11 0z" />
+          <path {...p} d="M12 16.5V21" />
         </>
       )}
       {slug === "marketing" && (

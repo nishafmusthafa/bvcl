@@ -35,7 +35,7 @@ const company = [
   ["Internships", "#"],
 ];
 
-export function Footer({ c, services }: { c: HomeContent["footer"]; services: HomeContent["services"]["items"] }) {
+export function Footer({ c }: { c: HomeContent["footer"] }) {
   return (
     <footer id="footer" className="bg-ground-deep pt-16 pb-10 md:pt-20">
       <div className="wrap">
@@ -58,10 +58,10 @@ export function Footer({ c, services }: { c: HomeContent["footer"]; services: Ho
             <nav aria-label="Services">
               <p className="text-sm text-text-3">Services</p>
               <ul className="mt-4 space-y-3">
-                {services.map((s, i) => (
+                {c.services.map((name, i) => (
                   <li key={i}>
                     <a href="#services" className="text-text-2 hover:text-text">
-                      {s.name}
+                      {name}
                     </a>
                   </li>
                 ))}
