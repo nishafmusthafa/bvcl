@@ -3,6 +3,11 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.5.11] - 2026-10-07
+
+### Added
+- Nitish Nair on the advisory board (Growth), straight after Bridgeway Investments. In code (`lib/content.ts`) and in /admin via migration `20261007120000_people_nitish_nair.sql`.
+
 ## [0.5.10] - 2026-10-05
 
 ### Changed
