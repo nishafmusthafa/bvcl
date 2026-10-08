@@ -41,6 +41,7 @@ export const serviceColor: Record<string, string> = {
   myaim: "#e879f9",
   marketing: "#fb7185",
   reelme: "#fb923c",
+  "brand-reel": "#38bdf8",
   "ai-plugins": "#a3e635",
 };
 
@@ -108,6 +109,14 @@ export function ServiceMark({ slug, className = "size-6" }: MarkProps) {
           <rect {...p} x="3" y="7" width="13" height="11" rx="2" />
           <path {...p} d="M16 11l5-3v9l-5-3z" />
           <path {...p} d="M6.5 4.5l1 2.5M10.5 4.5l1 2.5" />
+        </>
+      )}
+      {slug === "brand-reel" && (
+        <>
+          <path {...p} d="M4 10h16v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z" />
+          <path {...p} d="M4 10l-.6-3.2 15.2-2.9.6 3.2z" />
+          <path {...p} d="M8 6.2l2 3.3M12.5 5.3l2 3.4" />
+          <path {...p} d="M10.5 13.5v3.5l3-1.75z" />
         </>
       )}
       {slug === "ai-plugins" && (

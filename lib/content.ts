@@ -248,6 +248,15 @@ export const services = [
     alt: "A branded shop window display",
   },
   {
+    slug: "brand-reel",
+    name: "Brand Reel",
+    kind: "AI Ad Film Director",
+    line: "The AI ad film director that gives life to your ideas, from the first concept to a finished ad film.",
+    handles: "Concept · script · ad film",
+    image: "/unsplash/marketing-Rmjq07KI.webp",
+    alt: "A branded shop window display",
+  },
+  {
     slug: "ai-plugins",
     name: "AI Plugins & integrations",
     kind: "Optional add-ons",
@@ -264,6 +273,7 @@ export const footerServices = [
   "Smartsite",
   "MyAIM",
   "Reelme",
+  "Brand Reel",
   "Dialgen.AI",
   "VisorFlow",
   "Faircodeme",

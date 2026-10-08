@@ -26,17 +26,17 @@ export const homeSections = {
     defaults: {
       title: "AI won't replace your business. It will replace the leaks.",
       subtitle:
-        "Cold enquiries, missed calls, silent socials, stale content, expiring visas, numbers nobody trusts. Here's where each of our nine services steps in, day and night.",
+        "Cold enquiries, missed calls, silent socials, stale content, expiring visas, numbers nobody trusts. Here's where each of our ten services steps in, day and night.",
       problems: c.problems,
-      closing: "One team, nine services, one connected system. Start with the leak that costs you most.",
+      closing: "One team, ten services, one connected system. Start with the leak that costs you most.",
     },
   },
   services: {
     label: "Services",
     anchor: "services",
-    description: "The service menu: PROXe, Smartsite, MyAIM, Dialgen.AI, VisorFlow, ERPNext, marketing, Reelme and AI plugins.",
+    description: "The service menu: PROXe, Smartsite, MyAIM, Dialgen.AI, VisorFlow, ERPNext, marketing, Reelme, Brand Reel and AI plugins.",
     defaults: {
-      title: "Nine services. One brain behind them.",
+      title: "Ten services. One brain behind them.",
       intro: "Each is sold separately. Use one, or join them up. Together they share the same data, so nothing gets re-typed.",
       items: c.services,
       helpPrompt: "Not sure where to start?",

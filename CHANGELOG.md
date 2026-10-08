@@ -3,6 +3,14 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.8.0] - 2026-10-08
+
+### Added
+- Brand Reel (AI Ad Film Director) as service 09: "The AI ad film director that gives life to your ideas, from the first concept to a finished ad film." In the services list (with its own mark and colour) and the footer links, after Reelme. AI Plugins & integrations moves to 10.
+
+### Changed
+- "Nine services" is now "ten" in the leaks subhead, the line under the feed and the services heading.
+
 ## [0.7.0] - 2026-10-07
 
 ### Added
