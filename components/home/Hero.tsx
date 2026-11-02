@@ -48,16 +48,20 @@ export default function Hero({ c, brands }: { c: HomeContent["hero"]; brands: Cl
       {/* lamp light that follows the cursor */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_640px_at_var(--mx,72%)_var(--my,42%),oklch(70%_0.17_277/0.24),transparent_70%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_70%_at_78%_45%,oklch(42%_0.24_272/0.6),transparent_70%)]"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_640px_at_var(--mx,72%)_var(--my,42%),oklch(70%_0.17_277/0.2),transparent_70%)]"
       />
       <div className="wrap relative grid min-h-[min(100svh,960px)] items-center gap-6 pt-[96px] pb-12 lg:grid-cols-[1.05fr_0.95fr] lg:pb-16">
         <div className="relative z-10" data-scroll-out>
-          <p className="inline-flex items-center gap-2 rounded-full border border-line px-3 py-1.5 text-sm text-text-2">
+          <p className="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/[0.04] px-3 py-1.5 text-sm text-text-2 backdrop-blur-sm">
             <span className="size-1.5 rounded-full bg-lamp" aria-hidden />
             {c.eyebrow}
           </p>
-          <h1 className="display mt-7 text-[clamp(2.75rem,6vw,5.5rem)]">
-            {c.headline} <span className="text-lamp">{c.headlineAccent}</span>
+          <h1 className="display mt-7 text-[clamp(2.75rem,5.9vw,5.6rem)]">
+            {c.headline} <span className="accent-text">{c.headlineAccent}</span>
           </h1>
           <p className="mt-7 max-w-[48ch] text-lg leading-relaxed text-text-2 md:text-xl">
             {c.intro}

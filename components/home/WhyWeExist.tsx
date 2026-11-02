@@ -2,24 +2,24 @@ import type { HomeContent } from "@/lib/cms/home";
 import { serviceColor } from "@/components/Logos";
 import TicketRail from "./TicketRail";
 
-// Paper section: the problem, with the system already working across
+// The problem, with the system already working across
 // different kinds of business.
 export default function WhyWeExist({ c }: { c: HomeContent["why"] }) {
   return (
-    <section className="bg-paper py-20 text-ink md:py-28" aria-labelledby="why-title">
+    <section className="py-20 md:py-28" aria-labelledby="why-title">
       <div className="wrap">
         <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:items-end">
           <h2 id="why-title" className="display text-[clamp(2.4rem,5vw,4.5rem)]" data-reveal>
             {c.title}
           </h2>
-          <p className="max-w-[40ch] text-xl leading-relaxed text-ink-2 md:text-2xl lg:justify-self-end" data-reveal>
+          <p className="max-w-[40ch] text-xl leading-relaxed text-text-2 md:text-2xl lg:justify-self-end" data-reveal>
             {c.subtitle}
           </p>
         </div>
 
         <div className="mt-14 grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
           {/* Sticky on desktop: stays beside the problems instead of stretching to their height. */}
-          <div className="relative overflow-hidden rounded-[4px] bg-ground lg:sticky lg:top-24 lg:min-h-[720px] lg:self-start" data-reveal>
+          <div className="card-soft relative overflow-hidden lg:sticky lg:top-24 lg:min-h-[720px] lg:self-start" data-reveal>
             <div
               aria-hidden
               data-parallax="80"
@@ -35,17 +35,17 @@ export default function WhyWeExist({ c }: { c: HomeContent["why"] }) {
           </div>
 
           <div className="flex flex-col">
-            <ol className="border-t border-ink/15">
+            <ol className="grid gap-3">
               {c.problems.map((p, i) => (
-                <li key={i} data-reveal className="grid grid-cols-[3rem_1fr] border-b border-ink/15 py-6">
-                  <span className="font-mono text-sm text-ink-2">{p.n}</span>
+                <li key={i} data-reveal className="card-soft grid grid-cols-[3rem_1fr] p-5 md:p-6">
+                  <span className="font-mono text-sm text-text-3">{p.n}</span>
                   <div>
                     <h3 className="text-2xl font-bold tracking-[-0.02em]">{p.title}</h3>
-                    <p className="mt-1.5 inline-flex items-center gap-2 font-mono text-xs tracking-[0.06em] text-ink uppercase">
+                    <p className="mt-1.5 inline-flex items-center gap-2 font-mono text-xs tracking-[0.06em] text-text-2 uppercase">
                       <span className="size-2 rounded-full" style={{ background: serviceColor[p.slug] }} aria-hidden />
                       {p.service}
                     </p>
-                    <p className="mt-2 max-w-[42ch] text-base leading-relaxed text-ink-2">{p.body}</p>
+                    <p className="mt-2 max-w-[42ch] text-base leading-relaxed text-text-2">{p.body}</p>
                   </div>
                 </li>
               ))}

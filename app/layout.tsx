@@ -15,7 +15,7 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Scafell Partners: AI and business systems for UK businesses",
   description:
-    "Scafell Partners, formerly Bakervaughn, builds the system that runs your business: AI agents, ERP, HR and compliance, and marketing, connected for UK businesses.",
+    "Scafell Partners builds the system that runs your business: AI agents, ERP, HR and compliance, and marketing, connected for UK businesses.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

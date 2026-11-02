@@ -46,9 +46,9 @@ export default function ConnectMap({ c }: { c: HomeContent["connect"] }) {
           </p>
         </div>
 
-        <ol ref={ref} className="mt-14 grid gap-px overflow-hidden rounded-[4px] bg-line sm:grid-cols-2 lg:grid-cols-5">
+        <ol ref={ref} className="mt-14 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
           {c.steps.map((f, i) => (
-            <li key={i} className="stage relative flex min-h-[260px] flex-col bg-ground p-6 md:p-7">
+            <li key={i} className="stage card-soft relative flex min-h-[260px] flex-col overflow-hidden p-6 md:p-7">
               <span className="stage-bar absolute inset-x-0 top-0 h-[3px] bg-lamp" aria-hidden />
               <div className="flex items-center justify-between">
                 <span className="font-mono text-sm text-lamp">{String(i + 1).padStart(2, "0")}</span>

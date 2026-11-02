@@ -63,7 +63,7 @@ export default function Testimonials({ items }: { items: Testimonial[] | null })
           {list.map((t) => {
             const vid = t.kind === "video" ? youtubeId(t.video_url) : null;
             return (
-              <li key={t.id} data-reveal className="flex flex-col rounded-2xl border border-line bg-surface/60 p-6 md:p-7">
+              <li key={t.id} data-reveal className="card-soft flex flex-col p-6 md:p-7">
                 {vid ? (
                   <a
                     href={`https://www.youtube.com/watch?v=${vid}`}

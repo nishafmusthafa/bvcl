@@ -2,10 +2,10 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import type { HomeContent } from "@/lib/cms/home";
 
-// Paper section. Each project is a docket: challenge / what we did / outcome.
+// Each project is a docket: challenge / what we did / outcome.
 export default function Work({ c }: { c: HomeContent["work"] }) {
   return (
-    <section id="work" className="bg-paper py-20 text-ink md:py-28" aria-labelledby="work-title">
+    <section id="work" className="py-20 md:py-28" aria-labelledby="work-title">
       <div className="wrap">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <h2 id="work-title" className="display max-w-[12ch] text-[clamp(2.4rem,5vw,4.5rem)]" data-reveal>
@@ -17,18 +17,18 @@ export default function Work({ c }: { c: HomeContent["work"] }) {
           </a>
         </div>
 
-        <div className="mt-14 border-t border-ink/20">
+        <div className="mt-14 grid gap-5">
           {c.projects.map((w, i) => (
-            <article key={i} data-reveal className="grid gap-8 border-b border-ink/20 py-10 lg:grid-cols-[0.9fr_1.6fr] lg:gap-16 lg:py-14">
+            <article key={i} data-reveal className="card-soft grid gap-8 p-6 md:p-8 lg:grid-cols-[0.9fr_1.6fr] lg:gap-16 lg:p-10">
               <div>
-                <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.06em] text-ink-2">
+                <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.06em] text-text-3">
                   <span>Project {String(i + 1).padStart(2, "0")}</span>
                   <span aria-hidden>·</span>
                   <span>{w.kind}</span>
                 </div>
                 <h3 className="display mt-4 text-[clamp(2.2rem,4vw,3.5rem)]">{w.name}</h3>
-                <p className="mt-2 text-ink-2">{w.client}</p>
-                <div className="relative mt-6 aspect-[4/3] max-w-md overflow-hidden rounded-[4px] bg-paper-shade">
+                <p className="mt-2 text-text-2">{w.client}</p>
+                <div className="relative mt-6 aspect-[4/3] max-w-md overflow-hidden rounded-2xl bg-surface">
                   {w.image && (
                     // Images added from /admin may live on any host, so only local ones go through the optimiser.
                     <Image
@@ -42,7 +42,7 @@ export default function Work({ c }: { c: HomeContent["work"] }) {
                     />
                   )}
                   {(!w.image || w.image.startsWith("/unsplash/")) && (
-                    <span className="absolute bottom-2 left-2 rounded-full bg-paper/90 px-2 py-0.5 font-mono text-[10px] text-ink-2">
+                    <span className="absolute bottom-2 left-2 rounded-full bg-ground/85 px-2 py-0.5 font-mono text-[10px] text-text-2">
                       Stock photo · [ADD PROJECT PHOTO]
                     </span>
                   )}
@@ -60,9 +60,9 @@ export default function Work({ c }: { c: HomeContent["work"] }) {
                   )
                     .filter(([, v]) => Boolean(v))
                     .map(([k, v]) => (
-                    <div key={k} className="border-t border-ink/20 pt-4">
+                    <div key={k} className="border-t border-white/10 pt-4">
                       <dt className="text-sm font-semibold">{k}</dt>
-                      <dd className={`mt-2 text-base leading-relaxed ${v.startsWith("[ADD") ? "font-mono text-sm text-docket" : "text-ink-2"}`}>
+                      <dd className={`mt-2 text-base leading-relaxed ${v.startsWith("[ADD") ? "font-mono text-sm text-docket" : "text-text-2"}`}>
                         {v}
                       </dd>
                     </div>

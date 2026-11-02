@@ -33,9 +33,9 @@ export default function Operators({ c }: { c: Omit<HomeContent["operators"], "le
           </div>
         </div>
 
-        <ul className="mt-16 grid gap-px bg-line md:grid-cols-3">
+        <ul className="mt-16 grid gap-4 md:grid-cols-3">
           {c.leadership.map((p, i) => (
-            <li key={i} className="bg-ground" data-reveal>
+            <li key={i} className="card-soft overflow-hidden" data-reveal>
               <div className="relative grid aspect-[5/4] place-items-center overflow-hidden border-b border-line bg-surface">
                 {p.photo ? (
                   // eslint-disable-next-line @next/next/no-img-element -- headshots uploaded from /admin

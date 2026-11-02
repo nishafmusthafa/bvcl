@@ -3,6 +3,20 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [0.10.1] - 2026-11-03
+
+### Removed
+- "formerly Bakervaughn" from the meta description and footer. Scafell Partners is presented as a new company.
+
+## [0.10.0] - 2026-11-03
+
+### Changed
+- New look, taken from the style of bybo.in: near-black background, glass header, white pill buttons, a deep indigo glow in the hero and closing section, and dark rounded cards with soft gradients in place of ruled rows.
+- The light sections (leaks, work, beliefs) are now dark.
+- Tighter, larger headlines, with an indigo sweep on the hero's accent words.
+- Each section fades up from dark as it scrolls in. Off under reduced motion.
+- All homepage sections and copy are unchanged.
+
 ## [0.9.0] - 2026-11-03
 
 ### Changed

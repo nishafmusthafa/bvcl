@@ -6,7 +6,8 @@ Refuses the AI default: violet/indigo glow, cyan "live" dots, Inter/Geist, three
 
 ## Own world
 - Ground: warm dark steel (not blue-black). Surfaces are brushed steel tiers.
-- Paper: thermal ticket paper, printed in mono ink. The only light surface on the page.
+- Paper: thermal ticket paper, printed in mono ink. The only light surface on the page; every section is dark.
+- Cards: `.card-soft`, dark and rounded with a soft gradient and indigo glow. Primary buttons are white pills.
 - Lamp: indigo. Means LIVE / ANSWERED / primary action. Never decoration.
 - Docket red: stamps and urgent states only.
 - Type: Inter Tight (tight tracking) + JetBrains Mono. The mono appears ONLY where real systems print: tickets, boards, timestamps.

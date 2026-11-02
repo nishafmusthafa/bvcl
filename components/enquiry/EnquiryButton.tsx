@@ -15,8 +15,8 @@ type Props = {
 export default function EnquiryButton({ source, service, variant = "primary", children, className = "" }: Props) {
   const { open } = useEnquiry();
   const styles = {
-    primary: "h-14 bg-lamp px-7 text-ink hover:bg-[oklch(78%_0.14_277)] font-semibold",
-    ink: "h-14 bg-ink px-7 text-paper hover:bg-[oklch(28%_0.03_272)] font-semibold",
+    primary: "h-14 bg-white px-7 text-ink shadow-[0_0_50px_-12px_var(--lamp)] hover:bg-[oklch(90%_0.04_277)] font-semibold",
+    ink: "h-14 bg-white px-7 text-ink shadow-[0_0_50px_-12px_var(--lamp)] hover:bg-[oklch(90%_0.04_277)] font-semibold",
     quiet: "h-11 px-1 text-text-2 hover:text-text underline-offset-4 hover:underline",
   }[variant];
 

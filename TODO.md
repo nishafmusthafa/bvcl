@@ -74,3 +74,4 @@ Status: todo / doing / done / blocked. Newest items at the bottom.
 | T68 | Footer and legal wording: confirm the registered company name and number now the trading name has changed (with T36) | blocked | User |
 | T69 | Check Supabase admin lists (team, work, testimonials) for the old name | todo | Needs /admin access. Not in code, so not changed by T67 |
 | T70 | Move contact email off connect@bvcl.uk when a new mailbox exists | blocked | User |
+| T71 | Apply the bybo.in look and scroll effects; keep every homepage section and its copy | done | v0.10.0. Look and effects only, none of BYBO's words or images. tsc, lint, build pass. 1440px and 375px checked. |

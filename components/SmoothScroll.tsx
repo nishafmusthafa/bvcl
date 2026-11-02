@@ -36,7 +36,7 @@ function splitWords(root: HTMLElement) {
 
 // Lenis drives the scroll, GSAP's ticker drives Lenis, ScrollTrigger listens.
 // Owns the page-wide motion: [data-reveal] entrances, word-by-word section
-// headings, [data-parallax] drift and the hero's [data-scroll-out] exit.
+// headings, section fade-ins, [data-parallax] drift and the hero's [data-scroll-out] exit.
 export default function SmoothScroll() {
   useEffect(() => {
     if (reducedMotion()) return;
@@ -64,6 +64,15 @@ export default function SmoothScroll() {
           ease: "expo.out",
           scrollTrigger: { trigger: h, start: "top 85%", once: true },
         });
+      });
+
+      // Each section starts dark and comes up as it enters the screen.
+      document.querySelectorAll<HTMLElement>("main > section:not(#top)").forEach((s) => {
+        gsap.fromTo(
+          s,
+          { opacity: 0.15 },
+          { opacity: 1, ease: "none", scrollTrigger: { trigger: s, start: "top 96%", end: "top 58%", scrub: true } },
+        );
       });
 
       // Parallax: value is the drift in px either side of centre.

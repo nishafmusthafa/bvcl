@@ -62,7 +62,7 @@ export default function Approach({ c }: { c: HomeContent["approach"] }) {
 
         <div className="mt-14 grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:gap-20">
           <div>
-            <div role="tablist" aria-label="Stages" className="grid grid-cols-2 gap-px bg-line sm:grid-cols-4">
+            <div role="tablist" aria-label="Stages" className="grid grid-cols-2 gap-2 sm:grid-cols-4">
               {stages.map((st, i) => (
                 <button
                   key={st.key}
@@ -76,8 +76,8 @@ export default function Approach({ c }: { c: HomeContent["approach"] }) {
                   tabIndex={i === active ? 0 : -1}
                   onClick={() => setActive(i)}
                   onKeyDown={(e) => onKey(e, i)}
-                  className={`min-h-16 px-4 py-3 text-left transition-colors ${
-                    i === active ? "bg-lamp text-ink" : "bg-ground-deep text-text-2 hover:text-text"
+                  className={`min-h-16 rounded-2xl border border-white/10 px-4 py-3 text-left transition-colors ${
+                    i === active ? "border-white bg-white text-ink" : "bg-white/[0.03] text-text-2 hover:text-text"
                   }`}
                 >
                   <span className="block font-mono text-xs">{String(i + 1).padStart(2, "0")}</span>

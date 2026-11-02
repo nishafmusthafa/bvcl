@@ -9,13 +9,17 @@ const telHref = (phone: string) => `tel:+44${phone.replace(/\D/g, "").replace(/^
 
 export function Close({ c }: { c: HomeContent["close"] }) {
   return (
-    <section id="contact" className="bg-lamp py-20 text-ink md:py-28" aria-labelledby="close-title">
-      <div className="wrap grid gap-10 lg:grid-cols-[1.3fr_0.7fr] lg:items-end">
+    <section id="contact" className="relative overflow-hidden py-24 md:py-36" aria-labelledby="close-title">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_90%_at_75%_60%,oklch(42%_0.24_272/0.6),transparent_72%)]"
+      />
+      <div className="wrap relative grid gap-10 lg:grid-cols-[1.3fr_0.7fr] lg:items-end">
         <h2 id="close-title" className="display max-w-[14ch] text-[clamp(2.6rem,6.4vw,6rem)]">
           {c.title}
         </h2>
         <div>
-          <p className="max-w-[40ch] text-lg leading-relaxed text-ink/80">
+          <p className="max-w-[40ch] text-lg leading-relaxed text-text-2">
             {c.body}
           </p>
           <EnquiryButton source="close" variant="ink" className="mt-8">
@@ -89,7 +93,7 @@ export function Footer({ c }: { c: HomeContent["footer"] }) {
         </div>
 
         <div className="mt-16 flex flex-col items-center gap-3 border-t border-line-soft pt-6 text-center text-sm text-text-3">
-          <p>© 2026 Scafell Partners, formerly Bakervaughn · Company no. {c.companyNumber} · v{version}</p>
+          <p>© 2026 Scafell Partners · Company no. {c.companyNumber} · v{version}</p>
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
             <a href="#" className="hover:text-text">Privacy policy</a>
             <span>

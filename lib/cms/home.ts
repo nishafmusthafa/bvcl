@@ -127,7 +127,7 @@ export const homeSections = {
   close: {
     label: "Contact call to action",
     anchor: "contact",
-    description: "The accent-coloured closing section with the consultation button.",
+    description: "The closing section with the consultation button.",
     defaults: {
       title: "Tell us the one thing costing you most.",
       body: "A free consultation, no obligation. Tell us how your business runs today and we'll show you where one connected system saves the most time.",

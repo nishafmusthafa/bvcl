@@ -5,6 +5,10 @@ Last updated: 2026-11-03.
 ## Goal
 Run the Baker Vaughn site (fork of `bconclub/bakervaughn`) from `nishafmusthafa/bvcl`, deployed on Vercel, with versioned, verified releases. The process is in `CLAUDE.md`.
 
+## Latest (2026-11-03, BYBO-style look)
+- v0.10.0 applies a bybo.in-style look: dark throughout, glass header, white pill buttons, soft glowing cards, gradient accent words, sections fading in on scroll. No section or copy changed.
+- `TicketRail` shows collapsed tickets under `next dev` only. React Strict Mode runs its print animation twice and the second run starts from height 0. Check it with a production build.
+
 ## Latest (2026-11-03, rebrand)
 - Site rebranded to Scafell Partners in v0.9.0 (see CHANGELOG). Neutral tokens in `DESIGN.md` still need a full pass; `app/globals.css` is the source.
 - Vercel domains changed on 2026-11-03: bvcl.uk and bakervaughn.co.uk removed, scafellpartners.com and www added, waiting on GoDaddy DNS. Production is `www.scafellpartners.com`.

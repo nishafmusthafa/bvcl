@@ -17,12 +17,12 @@ export default function Services({ c }: { c: HomeContent["services"] }) {
           </p>
         </div>
 
-        <ul className="mt-14 border-t border-line">
+        <ul className="mt-14 grid gap-3">
           {c.items.map((s, i) => (
-            <li key={i} data-reveal className="border-b border-line">
+            <li key={i} data-reveal className="card-soft">
               <a
                 href="#services"
-                className="group grid gap-4 py-7 md:grid-cols-[220px_1fr_1.3fr_auto] md:items-center md:gap-10 md:py-8"
+                className="group grid gap-4 p-5 md:grid-cols-[220px_1fr_1.3fr_auto] md:items-center md:gap-10 md:p-5 md:pr-8"
               >
                 <div
                   className="relative hidden aspect-[16/10] place-items-center overflow-hidden rounded-2xl border border-white/10 md:grid"

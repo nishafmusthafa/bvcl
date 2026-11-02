@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --ground: oklch(17% 0.03 272);
-  --ground-deep: oklch(13.5% 0.025 272);
-  --surface: oklch(21% 0.03 272);
-  --line: oklch(31% 0.03 272);
-  --line-soft: oklch(25% 0.03 272);
+  --ground: #08080E;
+  --ground-deep: #050509;
+  --surface: #11121B;
+  --line: oklch(27% 0.015 280);
+  --line-soft: oklch(21% 0.012 280);
   --text: oklch(96% 0.006 275);
   --text-2: oklch(78% 0.015 275);
   --text-3: oklch(67% 0.018 275);
@@ -15,7 +15,7 @@
   --ink-2: oklch(42% 0.025 272);
   --lamp: oklch(70% 0.17 277);
   --lamp-deep: #3D3BF3;
-  --docket: oklch(56% 0.19 29);
+  --docket: oklch(72% 0.15 35);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -63,9 +63,32 @@ body {
 
 /* Display type: Inter Tight, tight tracking */
 .display {
-  font-weight: 800;
-  letter-spacing: -0.03em;
+  font-weight: 700;
+  letter-spacing: -0.045em;
   line-height: 0.95;
+}
+
+/* Accent words: a soft indigo sweep */
+.accent-text {
+  background-image: linear-gradient(100deg, oklch(84% 0.09 277), oklch(70% 0.17 277) 55%, oklch(62% 0.21 277));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Dark rounded card with a soft gradient and an indigo glow */
+.card-soft {
+  border: 1px solid oklch(100% 0 0 / 0.11);
+  border-radius: 22px;
+  background: linear-gradient(180deg, oklch(100% 0 0 / 0.045), oklch(100% 0 0 / 0.012)), var(--ground);
+  box-shadow: 0 40px 100px -50px #000, 0 0 100px -55px var(--lamp-deep);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+@media (hover: hover) {
+  .card-soft:hover {
+    border-color: oklch(70% 0.17 277 / 0.4);
+    box-shadow: 0 40px 100px -50px #000, 0 0 110px -40px var(--lamp-deep);
+  }
 }
 
 .wrap {

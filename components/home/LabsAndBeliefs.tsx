@@ -15,9 +15,9 @@ export function Labs({ c }: { c: HomeContent["labs"] }) {
             {c.intro}
           </p>
         </div>
-        <ul className="border-t border-line">
+        <ul className="grid gap-3">
           {c.items.map((l, i) => (
-            <li key={i} data-reveal className="grid grid-cols-[1fr_auto] items-baseline gap-4 border-b border-line py-6">
+            <li key={i} data-reveal className="card-soft grid grid-cols-[1fr_auto] items-baseline gap-4 p-5 md:p-6">
               <div>
                 <p className="text-xl font-bold tracking-[-0.015em] md:text-2xl">{l.name}</p>
                 <p className="mt-1 text-text-2">{l.line}</p>
@@ -33,18 +33,18 @@ export function Labs({ c }: { c: HomeContent["labs"] }) {
 
 export function Beliefs({ c }: { c: HomeContent["beliefs"] }) {
   return (
-    <section className="bg-paper py-20 text-ink md:py-28" aria-labelledby="beliefs-title">
+    <section className="py-20 md:py-28" aria-labelledby="beliefs-title">
       <div className="wrap">
         <h2 id="beliefs-title" className="display max-w-[14ch] text-[clamp(2.4rem,5vw,4.5rem)]" data-reveal>
           {c.title}
         </h2>
-        <ol className="mt-14 grid gap-x-12 border-t border-ink/20 md:grid-cols-2">
+        <ol className="mt-14 grid gap-4 md:grid-cols-2">
           {c.items.map((b, i) => (
-            <li key={i} data-reveal className="grid grid-cols-[3rem_1fr] border-b border-ink/20 py-8">
-              <span className="font-mono text-sm text-ink-2">{String(i + 1).padStart(2, "0")}</span>
+            <li key={i} data-reveal className="card-soft grid grid-cols-[3rem_1fr] p-6 md:p-7">
+              <span className="font-mono text-sm text-text-3">{String(i + 1).padStart(2, "0")}</span>
               <div>
                 <h3 className="text-2xl font-bold tracking-[-0.02em]">{b.title}</h3>
-                <p className="mt-2 max-w-[44ch] text-base leading-relaxed text-ink-2">{b.body}</p>
+                <p className="mt-2 max-w-[44ch] text-base leading-relaxed text-text-2">{b.body}</p>
               </div>
             </li>
           ))}
